@@ -1,6 +1,6 @@
 <template>
     <div>
-        This is the Home page
+        Vote Smart
     </div>
 </template>
 <script>
