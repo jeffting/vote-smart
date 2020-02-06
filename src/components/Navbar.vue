@@ -22,9 +22,6 @@
 <script>
 export default {
     methods: {
-        setPage() {
-            router.push('home')
-        }
     }
 }
 </script>
