@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Quiz from '@/components/Quiz'
 import Issues from '@/components/Issues'
+import Quiz from '@/components/Quiz'
 import Candidates from '@/components/Candidates'
 
 Vue.use(Router)
@@ -15,19 +15,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/quiz',
-      name: 'Quiz',
-      component: Quiz,
-    },
-    {
-      path: '/issues',
+      path: '/Issues',
       name: 'Issues',
-      component: Issues,
+      component: Issues
     },
     {
-      path: '/candidates',
+      path: '/Candidates',
       name: 'Candidates',
-      component: Candidates,
+      component: Candidates
+    },
+    {
+      path: '/Quiz',
+      name: 'Quiz',
+      component: Quiz
     }
   ]
 })
