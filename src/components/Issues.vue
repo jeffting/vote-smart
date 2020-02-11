@@ -3,6 +3,11 @@
         <div class="title-flex-item"><h2>Issues</h2></div>
         <div class="row-flex">
             <div class="flex-item-row">
+                <img class="issue-img-container" src="../assets/money.jpg">
+                <h3 class="issue-title">Economy</h3>
+                <p class="issue-info">The US economy is currently in its longest expansion ever, and unemployment is at a record low. That's music to President Trump's ears. But the country's also dealing with rising income inequality and stagnant wages.</p>
+            </div>
+            <div class="flex-item-row">
                 <img class="issue-img-container" src="../assets/baby.jpg">
                 <h3 class="issue-title">Abortion</h3>
                 <p class="issue-info" >Abortion rates have been going down for decades. But with the recent wave of statewide abortion restrictions, the issue has taken a front seat in the 2020 election.</p>
@@ -12,18 +17,14 @@
                 <h3 class="issue-title">Climate Change</h3>
                 <p class="issue-info">The effects of climate change - like more frequent wildfires and flooding - are hitting home for voters in a way they haven't in the past.</p>
             </div>
-            <div class="flex-item-row">
-                <img class="issue-img-container" src="../assets/money.jpg">
-                <h3 class="issue-title">Economy</h3>
-                <p class="issue-info">The US economy is currently in its longest expansion ever, and unemployment is at a record low. That's music to President Trump's ears. But the country's also dealing with rising income inequality and stagnant wages.</p>
-            </div>
+
             <div class="flex-item-row">
                 <img class="issue-img-container" src="../assets/school.jpg">
                 <h3 class="issue-title">Education</h3>
                 <p class="issue-info">The nation has a $1.5 trillion student debt problem. That's led to a fierce debate about how to make college more affordable. The candidates also have policies to address everything from universal pre-k to charter schools.</p>
             </div>
         </div>
-        <div class="row-flex">
+        <div class="row-flex" style="margin-top: 16px">
             <div class="flex-item-row">
                 <img class="issue-img-container" src="../assets/gun.jpg">
                 <h3 class="issue-title">Guns</h3>
@@ -83,6 +84,12 @@ export default {
 .flex-item-row {
     width: 22%;
     margin-bottom: 8px;
+    padding: 16px 8px 16px 8px;
+    border: solid #d8d8d8 2px;
+    border-radius: 8px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
+    box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
 }
 .issue-title {
     margin-top: 8px;
