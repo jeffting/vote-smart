@@ -31,12 +31,15 @@ h1, h2, h3 {
 }
 h1 {
   font-size: 48px;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 32px;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 24px;
+  text-transform: uppercase;
 }
 p {
   font-size: 16px;
