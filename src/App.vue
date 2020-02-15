@@ -44,4 +44,10 @@ h3 {
 p {
   font-size: 16px;
 }
+.issue-img-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    object-fit: cover;
+}
 </style>

@@ -5,6 +5,7 @@ import Issues from '@/components/Issues'
 import Quiz from '@/components/Quiz'
 import Candidates from '@/components/Candidates'
 import Profile from '@/components/Profile'
+import Issue from '@/components/Issue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/Profile/:name',
       name: 'Profile',
       component: Profile
+    },
+    {
+      path: '/Issue/:issue',
+      name: 'Issue',
+      component: Issue
     }
   ]
 })
