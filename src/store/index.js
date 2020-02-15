@@ -190,6 +190,57 @@ export default new Vuex.Store({
             climage_change: 'He sees it as a major issue and supports rejoining the Paris climate deal.',
             guns: 'he’s apparently not a fan of President Trump’s idea to arm teachers with guns. He thinks legally-acquired rifles in the hands of private citizens are "a bulwark against government oppression." But he thinks there should be red flag laws to keep guns out of the hands of people with mental illness. He also want waiting periods when it comes to gun purchases, and to ban handgun sales to people under 21.',
         },
+      ],
+      issues: [
+          {
+              id: "economy",
+              name: "Economy",
+              info: "Info taken from theskimm.com. The US economy is currently in its longest expansion...ever. Unemployment is at a record low, there’s been steady GDP growth, and the stock market hit a number of record highs last year. But the economy has been slowing down. That’s because of things like the US-China trade war, which has hurt industries like farming and manufacturing. In 2019, the Fed started cutting interest rates for the first time since the 2008 financial crisis with the hope of avoiding a recession. That’s contributed to things like lower mortgage rates, which have helped the housing market grow. And recession alarm bells have died down a bit, especially since trade tensions around the world (see: the US-China trade war, the new NAFTA deal) have cooled off. Meanwhile, income inequality has become a focus of the 2020 campaign. In 2018, the gap between the US’s wealthiest and poorest families hit a 50-year high. Some of the reasons: a decline in labor unions, the federal minimum wage staying stagnant at $7.25, and tax policies that favor wealthier families. Candidates have different ideas on how to fix the problem. See: universal basic income, “baby bonds,” a tax on the country’s richest people, and tax breaks for the lower and middle classes. Speaking of taxes: back in 2017, Republicans overhauled the country’s tax code for the first time in decades. It included tax cuts in every income bracket and for big corporations. The cuts contributed to the US deficit reaching nearly $1 trillion in 2019. Candidates from both parties have criticized the Trump admin for allowing that number to get so high.",
+              picture: require("../assets/money.jpg")
+          },
+          {
+            id: "abortion",
+            name: "Abortion",
+            info: "Info taken from theskimm.com. In 1973, the US Supreme Court ruled in Roe v. Wade that a woman’s right to privacy encompasses the right to abortions. But SCOTUS left room for some state regulation, like on how late into a pregnancy women can have an abortion. And Americans have strong opinions about when abortions should be allowed, if ever. Those who are pro-abortion rights point out that Roe v. Wade is the law of the land. And that women have the right to safe, legal abortions. They note that when states restrict abortions, women from poorer, rural communities tend to be affected – while wealthier women are able to afford travel to other states. Meanwhile, those who are anti-abortion rights think the arguments behind Roe v. Wade were a stretch, because the right to privacy isn’t explicitly mentioned anywhere in the Constitution. President Trump has supported abortion rights in the past, but said on the 2016 campaign trail that he would appoint Supreme Court justices who'd overturn Roe v. Wade. Since then, he’s appointed two new conservative justices. Meanwhile, several states have passed bills that ban abortions when a fetal heartbeat is detected. That can happen at around six weeks into a pregnancy, before many women know they’re pregnant. A lot of these bills have been blocked by the courts. But that’s the point: to appeal these cases until they make their way to the Supreme Court, where a solidly conservative majority could overturn Roe v. Wade.",
+            picture: require("../assets/baby.jpg")
+        },
+        {
+            id: "climate",
+            name: "Climate Change",
+            info: "Info taken from theskimm.com. The US is one of the largest contributors to the carbon emissions that are fueling climate change. And international outrage, particularly among young people, about a lack of action has made it a high-profile issue in the 2020 race. The United Nations has issued multiple reports warning about the potential “catastrophic” effects of climate change if countries don’t do more to keep Earth’s temp from rising. Like more frequent droughts and flooding, and extreme heat that could lead to things like food shortages and potentially affect hundreds of millions of people. The Trump administration has taken many steps to roll back Obama-era climate policies, like loosening regulations for carbon emissions and pulling the US out of the Paris climate deal. Meanwhile, the Dem candidates pretty much all agree that climate change is a dire problem that needs to be addressed stat. But they have different ideas about the best solutions. You’ll likely hear them talking about their plans for achieving net-zero emissions. That means the amount of greenhouse gases emitted into the atmosphere doesn’t exceed the amount taken out. Taken out how, you might ask? Through methods like reducing the use of diesel cars, cutting meat and dairy consumption, and even planting trees.",
+            picture: require("../assets/sun.jpeg")
+        },
+        {
+            id: "education",
+            name: "Education",
+            info: "Info taken from theskimm.com. In the past few decades, the cost of college has gone up, up, annnd up, contributing to the nation’s $1.5 trillion student debt problem. Millennials are saying 'we wish' to traditional milestones that contribute to economic growth – like buying a house. Some are graduating with debt only to be underemployed. All of this has led to a debate about how to make college more affordable and help graduates manage their debt. Proposals from 2020 candidates range from making four-year public schools completely free to increasing debt forgiveness for certain professions. Meanwhile, a wave of teacher strikes that started in 2018 brought attention to low teacher salaries. Some candidates are pushing plans to use federal dollars to help subsidize teacher pay. Other issues you’ll hear about on the campaign trail: whether the government should fund a national pre-kindergarten program (sometimes referred to as universal pre-k). Candidates also have strong feelings about school choice, aka allowing families to choose to send their kids to charter or even private schools with the help of taxpayer dollars.",
+            picture: require("../assets/school.jpg")
+        },
+        {
+            id: "guns",
+            name: "Guns",
+            info: "Info taken from theskimm.com. It’s been 25 years since Congress passed comprehensive gun control legislation. And in 2017, gun deaths reached the highest they’ve been in decades. A string of mass shootings in recent years (see: Las Vegas, Orlando, Charleston, El Paso, Dayton, Parkland) have amplified the issue for American voters and ignited new calls for action by lawmakers. The 2018 shooting at a high school in Parkland, FL was a turning point in the gun control conversation. A new generation of young, vocal gun control activists were crucial in getting younger voters to turn out in the 2018 midterms. And that could be the case again in 2020. Shootings last year in cities including Dayton, OH and El Paso, TX made gun control a central talking point on the campaign trail for Democrats. Voters in both parties agree on some key proposals: most Americans say gun laws should be stricter; a majority of both GOP and Dem voters are in favor of restricting gun sales to people with mental illnesses; and a majority in both parties favor background checks for private gun sales, and at gun shows. Here’s where the parties and candidates start to differ. The Democratic candidates all agree on banning assault-style weapons and high-capacity magazines – which can be defined as capable of holding more than 10 rounds. They disagree on things like mandatory buyback programs and gun registries. Some in the GOP have a different set of proposals in mind. President Trump supports ideas like teachers carrying firearms in schools, and giving states the power to regulate gun laws instead of using federal mandates.",
+            picture: require("../assets/gun.jpg")
+        },
+        {
+            id: "health",
+            name: "Health Care",
+            info: "Info taken from theskimm.com. US health care is the most expensive in the world. So expensive that a health emergency can put a family into bankruptcy. Some Americans are covered by Medicaid or Medicare, two gov programs that help cover older, lower-income, and disabled Americans. Since 2014, Obamacare has let states expand who can be covered under Medicaid and worked to make it easier for people to buy insurance outside of employer-provided plans. Still, 8.5% of Americans (27.5 million people) are uninsured. And even those who are insured can face significant health care costs because of things like high deductibles or copays. All of this means making health care more affordable and accessible is one of the most fiercely debated topics in politics. And a no. 1 issue for some voters. Some Democratic presidential candidates are proposing Medicare for All – abolishing private insurance and getting everyone in the US on a government-run plan. The move means everyone gets the same insurance, regardless of income. But other Dems don’t see the benefit of taking a pen to the entire US health care system. They want to keep the private insurance market but let everyone who wants Medicare opt in. Meanwhile, many on both sides of the aisle – including President Trump – want to focus on lowering specific health care costs (like drug prices) rather than just the insurance part.",
+            picture: require("../assets/health.jpg")
+        },
+        {
+            id: "immigration",
+            name: "Immigration",
+            info: "Info taken from theskimm.com. Trump has made curbing illegal immigration a top priority. See: demands to extend the US-Mexico border wall, attempts to end DACA (the Obama-era program that protects immigrants, known as Dreamers, brought here illegally as kids from deportation), and the “zero tolerance” policy that led to thousands of families being separated at the border. Those who support the admin’s moves say the US needs to keep the country safe. Critics argue that it’s the US’s moral responsibility to accept immigrants and refugees who come here for a better life, and that immigrants help boost the economy. Some Democratic candidates have called for reforming Immigration and Customs Enforcement (ICE) – the agency that oversees deportations – because they believe it has too much power. Their solutions range from reducing its responsibilities to completely getting rid of it. The Trump admin has also tried to overhaul legal immigration. It’s announced policies that favor merit-based immigration (think: giving priority to highly skilled immigrants or those who speak English) over family-based immigration. The admin claims this would ensure immigrants don’t take jobs and money from America’s working class. And this year, Trump added more countries to his controversial travel ban over national security concerns. The initial ban blocked people traveling from some Muslim-majority countries.",
+            picture: require("../assets/statue.jpg")
+        },
+        {
+            id: "security",
+            name: "National Security",
+            info: "Info taken from theskimm.com. There are a wide variety of issues that could affect the safety and security of Americans: everything from the threat of terrorism and nuclear war to gun control and climate change. President Trump ran on a platform of extending the US-Mexico border wall – and tends to treat illegal immigration as a national security threat. But both parties agree the US faces threats abroad: like Russia, because of its interference in the 2016 election process and concerns it could interfere in 2020 as well. Iran and China are also believed to pose serious cybersecurity threats to US elections. Meanwhile, ISIS. Even though it lost territory in Iraq and Syria, the group maintains cells around the world. That includes in Afghanistan, where the US has thousands of troops stationed to help contain terror threats, like ISIS and the Taliban.",
+            picture: require("../assets/security.jpg")
+        },
+          
       ]
   },
   getters: {
@@ -198,6 +249,9 @@ export default new Vuex.Store({
     },
     getCandidatesByParty: (state) => (party) => {
         return state.candidates.filter(candidate => candidate.party == party)
+    },
+    getIssueByName: (state) => (id) => {
+        return state.issues.find(issue => issue.id == id)
     }
   }
 })
