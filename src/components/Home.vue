@@ -31,6 +31,9 @@ export default {
         return {
         };
     },
+    beforeCreate() {
+        this.$store.dispatch('setPage', 'home');
+    },
     methods: {
         routeToIssues() {
             this.$router.push('Issues')

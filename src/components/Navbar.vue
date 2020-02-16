@@ -1,22 +1,22 @@
 <template>
   <div>
       <div class="nav-container">
-          <div class="icon-container">
+          <router-link to="/" class="icon-container">
           <img class="img-container" src="../assets/checkmark.png">
               <span style="float:right; margin-left: 8px; font-weight: 900">VOTE SMART</span>
-          </div>
+          </router-link>
           <div class="tab-container">
-              <router-link class="tab-button"
+              <router-link class="tab-button" :class="{ 'selected': page === 'home' }"
                 to="/"
               >Home</router-link>
               <router-link class="tab-button"
-                to="/candidates"
+                to="/candidates" :class="{ 'selected': page === 'candidates' }"
               >Candidates</router-link>
               <router-link class="tab-button"
-                to="/issues"
+                to="/issues" :class="{ 'selected': page === 'issues' }"
               >Issues</router-link>
               <router-link class="tab-button"
-                to="/quiz"
+                to="/quiz" :class="{ 'selected': page === 'quiz' }"
               >Quiz</router-link>
           </div>
       </div>
@@ -25,7 +25,10 @@
 </template>
 <script>
 export default {
-    methods: {
+    computed: {
+      page() {
+        return this.$store.getters.getPage();
+      }
     }
 }
 </script>
@@ -37,20 +40,21 @@ export default {
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
+
 }
 .tab-container {
     display: flex;
     flex-direction: row;
 }
 .icon-container {
-  color: #222222;
   font-size: 32px;
+  color: #222222;
 }
 .tab-button {
     padding: 8px;
     text-decoration: none;
-    color: #222222;
     font-size: 20px;
+    color: #222222;
 }
 .tab-button:hover {
   background-color: #222222;
@@ -68,5 +72,10 @@ export default {
 }
 .img-container {
   width: 42px;
+}
+.selected {
+  color: white;
+  background-color: #222222;
+  border-radius: 4px;
 }
 </style>
