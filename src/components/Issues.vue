@@ -85,11 +85,10 @@ export default {
     width: 22%;
     margin-bottom: 8px;
     padding: 16px 8px 16px 8px;
-    border: solid #d8d8d8 2px;
     border-radius: 8px;
-    -webkit-box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
-    -moz-box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
-    box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
 }
 .issue-title {
     margin-top: 8px;

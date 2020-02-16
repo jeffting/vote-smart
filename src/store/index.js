@@ -190,7 +190,8 @@ export default new Vuex.Store({
             climage_change: 'He sees it as a major issue and supports rejoining the Paris climate deal.',
             guns: 'he’s apparently not a fan of President Trump’s idea to arm teachers with guns. He thinks legally-acquired rifles in the hands of private citizens are "a bulwark against government oppression." But he thinks there should be red flag laws to keep guns out of the hands of people with mental illness. He also want waiting periods when it comes to gun purchases, and to ban handgun sales to people under 21.',
         },
-      ]
+      ],
+      page: "home"
   },
   getters: {
     getCandidateByName: (state) => (name) => {
@@ -198,6 +199,9 @@ export default new Vuex.Store({
     },
     getCandidatesByParty: (state) => (party) => {
         return state.candidates.filter(candidate => candidate.party == party)
+    },
+    getPage: (state) => () => {
+        return state.page;
     }
   }
 })
