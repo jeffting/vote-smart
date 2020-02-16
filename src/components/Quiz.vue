@@ -31,7 +31,10 @@ export default {
                 {issue: "Climate change", picture: require("../assets/sun.jpeg"), info: "The US is one of the largest contributors to the carbon emissions that are fueling climate change. And international outrage, particularly among young people, about a lack of action has made it a high-profile issue in the 2020 race. The United Nations has issued multiple reports warning about the potential “catastrophic” effects of climate change if countries don’t do more to keep Earth’s temp from rising. Like more frequent droughts and flooding, and extreme heat that could lead to things like food shortages and potentially affect hundreds of millions of people.", question: "Which statement most applies to you?", answers: ["Against strict restrictions on carbon emissions.", "Rejoin Paris Climate Deal, and work towards net-zero emissions by 2050.", "Establish carbon tax, and up the budget for reneweable energy research and development.", "Spend 16.3 trillion on sustainable electricity and transportation by 2030.", "Spend 3 trillion on eliminating greenhouse emissions from power plants, cars, and buildings in 10 years."]},
                 ]
         }
-    }
+    },
+    beforeCreate() {
+        this.$store.dispatch('setPage', 'quiz');
+    },
     
 }
 </script>

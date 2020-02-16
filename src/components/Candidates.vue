@@ -63,6 +63,9 @@ export default {
             // ],
         };
     },
+    beforeCreate() {
+        this.$store.dispatch('setPage', 'candidates');
+    },
     methods: {
         routeToProfile(candidate) {
             this.$router.push({name: 'Profile', params: {name: candidate}})

@@ -52,6 +52,10 @@
 </template>
 <script>
 export default {
+    beforeCreate() {
+        this.$store.dispatch('setPage', 'issues');
+
+    },
     methods: {
         issueClick(issue) {
             this.$router.push({name: 'Issue', params: {issue: issue}})
@@ -64,8 +68,8 @@ export default {
 .col-flex {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     /* height: 70vh; */
     margin-bottom: 32px;
 
@@ -84,11 +88,10 @@ export default {
     width: 22%;
     margin-bottom: 8px;
     padding: 16px 8px 16px 8px;
-    border: solid #d8d8d8 2px;
     border-radius: 8px;
-    -webkit-box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
-    -moz-box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
-    box-shadow: 2px 2px 4px 0px rgba(216,216,216,1);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
 }
 .flex-item-row:hover {
     cursor: pointer;
