@@ -51,15 +51,18 @@ export default {
   color: #222222;
 }
 .tab-button {
-    padding: 8px;
+    padding: 2px 8px 2px 8px;
+    margin-right: 2px;
+    margin-left: 2px;
     text-decoration: none;
     font-size: 20px;
     color: #222222;
+    border: 4px solid transparent;
 }
 .tab-button:hover {
-  background-color: #222222;
-  color: white;
-  border-radius: 4px;
+    border-radius: 4px;
+  border-style: solid;
+  border-color: #002868 #BF0A30 #BF0A30 #002868;
 }
 .full-navbar {
   border-bottom-style: solid;
@@ -74,8 +77,8 @@ export default {
   width: 42px;
 }
 .selected {
-  color: white;
-  background-color: #222222;
   border-radius: 4px;
-}
+  border: 4px solid;
+  border-color: #002868 #BF0A30 #BF0A30 #002868; 
+} 
 </style>
