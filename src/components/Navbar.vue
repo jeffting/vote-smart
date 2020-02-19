@@ -40,7 +40,6 @@ export default {
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
-
 }
 .tab-container {
     display: flex;
