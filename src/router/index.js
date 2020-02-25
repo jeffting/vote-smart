@@ -37,7 +37,7 @@ export default new Router({
       component: Profile
     },
     {
-      path: '/Issue/:issue',
+      path: '/Issues/:issue',
       name: 'Issue',
       component: Issue
     }
