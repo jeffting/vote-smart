@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div style="padding: 8px;">
       <div class="nav-container">
           <router-link to="/" class="icon-container">
           <img class="img-container" src="../assets/checkmark.png">
-              <span style="float:right; margin-left: 8px; font-weight: 900">VOTE SMART</span>
+              <span style="float:right; margin-left: 8px; font-weight: 900"><span style="color: #BF0A30">VOTE</span><span style="color: #002868">SMART</span></span>
           </router-link>
           <div class="tab-container">
               <router-link class="tab-button" :class="{ 'selected': page === 'home' }"
