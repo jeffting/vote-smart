@@ -1,26 +1,29 @@
 <template>
-  <div style="padding: 8px;">
-      <div class="nav-container">
-          <router-link to="/" class="icon-container">
-          <img class="img-container" src="../assets/checkmark.png">
-              <span style="float:right; margin-left: 8px; font-weight: 900"><span style="color: #BF0A30">VOTE</span><span style="color: #002868">SMART</span></span>
-          </router-link>
-          <div class="tab-container">
-              <router-link class="tab-button" :class="{ 'selected': page === 'home' }"
-                to="/"
-              >Home</router-link>
-              <router-link class="tab-button"
-                to="/candidates" :class="{ 'selected': page === 'candidates' }"
-              >Candidates</router-link>
-              <router-link class="tab-button"
-                to="/issues" :class="{ 'selected': page === 'issues' }"
-              >Issues</router-link>
-              <router-link class="tab-button"
-                to="/quiz" :class="{ 'selected': page === 'quiz' }"
-              >Quiz</router-link>
-          </div>
+  <div>
+    <div class="main-nav">
+        <div class="nav-container">
+            <router-link to="/" class="icon-container">
+            <img class="img-container" src="../assets/checkmark.png">
+                <span style="float:right; margin-left: 8px; font-weight: 900"><span style="color: #BF0A30">VOTE</span><span style="color: #002868">SMART</span></span>
+            </router-link>
+            <div class="tab-container">
+                <router-link class="tab-button" :class="{ 'selected': page === 'home' }"
+                  to="/"
+                >Home</router-link>
+                <router-link class="tab-button"
+                  to="/candidates" :class="{ 'selected': page === 'candidates' }"
+                >Candidates</router-link>
+                <router-link class="tab-button"
+                  to="/issues" :class="{ 'selected': page === 'issues' }"
+                >Issues</router-link>
+                <router-link class="tab-button"
+                  to="/quiz" :class="{ 'selected': page === 'quiz' }"
+                >Quiz</router-link>
+            </div>
+        </div>
+        <div class="full-navbar"></div>
       </div>
-      <div class="full-navbar"></div>
+      <div style="height: 87px;"></div>
     </div>
 </template>
 <script>
@@ -80,4 +83,10 @@ export default {
   border: 4px solid;
   border-color: #002868 #BF0A30 #BF0A30 #002868; 
 } 
+.main-nav {
+  padding: 8px 8px 0px 8px; 
+  background-color: #f4f4f4;
+  position: fixed;
+  width: 100vw;
+}
 </style>
