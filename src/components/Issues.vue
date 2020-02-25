@@ -1,6 +1,6 @@
 <template>
     <div class="col-flex">
-        <div class="title-flex-item"><h2>Issues</h2></div>
+        <div class="title-flex-item"><h1>Political Issues</h1></div>
         <div class="row-flex">
             <div class="flex-item-row" v-on:click="issueClick('economy')">
                 <img class="issue-img-container" src="../assets/money.jpg">
@@ -53,8 +53,10 @@
 <script>
 export default {
     beforeCreate() {
-        this.$store.dispatch('setPage', 'issues');
-
+        console.log(this.$route.name)
+        if (this.$route.name === "Issues") {
+            this.$store.dispatch('setPage', 'issues');
+        }
     },
     methods: {
         issueClick(issue) {
