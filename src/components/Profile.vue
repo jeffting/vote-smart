@@ -1,53 +1,41 @@
 <template>
   <div>
-    <h1> {{ name }} </h1>
-    <div>
+    <div class="profile-div">
         <div class="image-cropper" v-bind:class="[{ imageDemocrat: isDemocrat }, { imageRepublican: isRepublican }]">
             <img v-bind:src=photo>
         </div>
         <div>
-            <h3>Background</h3>
-            <p> {{ background }}</p>
+            <h2> {{ name }} </h2>
         </div>
-        <div v-if="abortion !== '' && abortion !== undefined">
-            <h3>Abortion</h3>
-            <p> {{ abortion }}</p>
+        <div class="points">
+            <div v-for="(point, index) in points" :key="point.value">
+                <ul>
+                    <li class="underline" v-if="index != points.length - 1"> {{ point.text }}</li>
+                    <li v-if="index == points.length - 1"> {{ point.text }}</li>
+                </ul>
+            </div>
         </div>
-        <div v-if="education !== '' && education !== undefined">
-            <h3>Education</h3>
-            <p> {{ education }}</p>
-        </div>
-        <div v-if="immigration !== '' && immigration !== undefined">
-            <h3>Immigration</h3>
-            <p> {{ immigration }}</p>
-        </div>
-        <div v-if="criminal_justice !== '' && criminal_justice !== undefined">
-            <h3>Criminal Justice</h3>
-            <p> {{ criminal_justice }}</p>
-        </div>
-        <div v-if="health_care !== '' && health_care !== undefined">
-            <h3>Health Care</h3>
-            <p> {{ health_care }}</p>
-        </div>
-        <div v-if="economy !== '' && economy !== undefined">
-            <h3>Economy</h3>
-            <p> {{ economy }}</p>
-        </div>
-        <div v-if="climate_change !== '' && climate_change !== undefined">
-            <h3>Climate Change</h3>
-            <p> {{ climate_change }}</p>
-        </div>
-        <div v-if="guns !== '' && guns !== undefined">
-            <h3>Guns</h3>
-            <p> {{ guns }}</p>
-        </div>
-        <div v-if="foreign_policy !== '' && foreign_policy !== undefined">
-            <h3>Foreign Policy</h3>
-            <p> {{ foreign_policy }}</p>
-        </div>
-        <div v-if="other !== '' && other !== undefined">
-            <h3>Other</h3>
-            <p> {{ other }}</p>
+        <div class="content">
+            <div class="details">
+                <div class="video-div">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f4nxBKdNO6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <iframe width="560" height="315" :src="video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- <div class="detail">
+                    <h3 v-bind:class="[{ h3Democrat: isDemocrat }, { h3Republican: isRepublican }]">Who is {{ name }}?</h3>
+                    <hr v-bind:class="[{ hrDemocrat: isDemocrat }, { hrRepublican: isRepublican }]">
+                    <p> {{ background }}</p>
+                </div>                 -->
+                <div>
+                    <!-- <hr v-bind:class="[{ hrDemocrat: isDemocrat }, { hrRepublican: isRepublican }]"> -->
+                    <h3 v-bind:class="[{ h3Democrat: isDemocrat }, { h3Republican: isRepublican }]">Opinions</h3>
+                    <div v-for="opinion in opinions" :key="opinion.value">
+                        <ul>
+                            <li class="issue-li" @click="routeToIssue(opinion.topic)"> <u><b>{{ opinion.topic }}</b></u>: {{ opinion.text }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
@@ -60,43 +48,30 @@ export default {
       name: this.$route.params.name,
     }
   },
+  methods: {
+        routeToIssue(issue) {
+            this.$router.push({name: 'Issue', params: {name: issue}})
+            // this.$router.push('Profile')
+        },
+    },
   computed: {
-    abortion: function () {
-        return this.$store.getters.getCandidateByName(this.name).abortion
-    },
-    education: function () {
-        return this.$store.getters.getCandidateByName(this.name).education
-    },
-    immigration: function () {
-        return this.$store.getters.getCandidateByName(this.name).immigration
-    },
-    criminal_justice: function () {
-        console.log(this.$store.getters.getCandidateByName(this.name).criminal_justice)
-        return this.$store.getters.getCandidateByName(this.name).criminal_justice
-    },
-    health_care: function () {
-        return this.$store.getters.getCandidateByName(this.name).health_care
-    },
-    economy: function () {
-        return this.$store.getters.getCandidateByName(this.name).economy
-    },
-    climate_change: function () {
-        return this.$store.getters.getCandidateByName(this.name).climate_change
-    },
-    guns: function () {
-        return this.$store.getters.getCandidateByName(this.name).guns
-    },
-    foreign_policy: function () {
-        return this.$store.getters.getCandidateByName(this.name).foreign_policy
-    },
-    other: function () {
-        return this.$store.getters.getCandidateByName(this.name).other
-    },
     background: function () {
         return this.$store.getters.getCandidateByName(this.name).description
     },
+    opinions: function () {
+        return this.$store.getters.getCandidateByName(this.name).opinions
+    },
     photo: function () {
         return this.$store.getters.getCandidateByName(this.name).photo
+    },
+    video: function () {
+        return this.$store.getters.getCandidateByName(this.name).video
+    },
+    party: function () {
+        return this.$store.getters.getCandidateByName(this.name).party
+    },
+    points: function () {
+        return this.$store.getters.getCandidateByName(this.name).points
     },
     isDemocrat: function () {
         if (this.$store.getters.getCandidateByName(this.name).party == 'D') {
@@ -128,6 +103,9 @@ export default {
     width: 288px; 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 48px;
+    display: flex; 
+    justify-content: center;
 }
 .imageDemocrat {
     border: 6px solid #002868;
@@ -135,7 +113,76 @@ export default {
 .imageRepublican {
     border: 6px solid #BF0A30;
 }
+.profile-div {
+    text-align: center;
+}
+.points {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+}
+.video-div {
+    text-align: center;
+}
+iframe {
+    display: inline-block;
+    padding-top: 32px;
+}
+.details {
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+    /* background-color: #F4F4F4;
+    padding: 16px; */
+}
+.detail {
+    padding-bottom: 16px;
+}
 img {   
     height: 100%;
 }
+.points ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.points li {
+    padding-bottom: 8pt;
+    padding-top: 8pt;
+}
+.underline {
+    border-bottom: 1px solid #666666;
+}
+hr {
+    height: 8px;
+    border-radius: 4px;
+}
+.hrDemocrat {
+    background-color: #002868;
+}
+.hrRepublican {
+    background-color: #BF0A30;
+}
+h3 {
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+.h3Republican {
+    background-color: #BF0A30;
+}
+.h3Democrat {
+    background-color: #002868;
+}
+.content {
+    background-color: #F4F4F4;
+    margin-top: 48px;
+    /* padding-top: 1px;
+    padding-left: 24px;
+    padding-right: 24px; */
+}
+.issue-li:hover {
+    cursor: pointer;
+}
+
 </style>
