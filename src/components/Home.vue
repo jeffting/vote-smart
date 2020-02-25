@@ -12,18 +12,22 @@
             <h3>EVEN WITH YOUR BUSY SCHEDULE</h3>
             <br>
             <h3>WHO DO YOU AGREE WITH?</h3> -->
+            <div class="top_div">
+                <div class="information">
+                    <p class="title">VOTESMART</p>
 
-            <p class="title">VOTESMART</p>
+                    <h2 class="tagline">Make an informed decision in the 2020 presidential election. Even with your busy schedule.</h2>
 
-            <h2 class="tagline">Make an informed decision in the 2020 presidential election. Even with your busy schedule.</h2>
-
-            <div>
-                <button @click="routeToQuiz" type="button">TAKE THE QUIZ</button>
-                <p class="link-candidates" @click="routeToCandidates">VIEW THE CANDIDATES</p>
-                <!-- <br>
-                <button @click="routeToCandidates" type="button">VIEW THE CANDIDATES</button>
-                <br>
-                <button @click="routeToIssues" type="button">VIEW THE ISSUES</button> -->
+                    <div>
+                        <button @click="routeToQuiz" type="button">TAKE THE QUIZ</button>
+                        <p class="link-candidates" @click="routeToCandidates">VIEW THE CANDIDATES</p>
+                        <!-- <br>
+                        <button @click="routeToCandidates" type="button">VIEW THE CANDIDATES</button>
+                        <br>
+                        <button @click="routeToIssues" type="button">VIEW THE ISSUES</button> -->
+                    </div>
+                </div>
+                <img class="main_picture" src="../assets/vote1.jpg">`
             </div>
         </div>
         <div class="issues-container">
@@ -120,13 +124,33 @@ export default {
     text-align: left;
     margin-bottom: 4%;
 }
+.top_div {
+    /* display: flex; */
+    height: 100%; 
+    position: relative;
+}
+.information {
+    display: inline;
+    width: 50%;
+    position: absolute;
+    top: 27%;
+    margin-left: 5%;
+}
+.main_picture {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    align: center;
+    
+}
 .title {
     text-align: left;
     margin-bottom: -20px;
+    color:  #222222;
 }
 .tagline {
     text-transform: None;
-    width: 40%;
+    width: 80%;
 }
 .link-candidates {
     text-decoration: underline;
@@ -169,6 +193,11 @@ export default {
     margin-bottom: 8px;
     padding: 16px 8px 16px 8px;
     border-radius: 8px;
+    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1); */
+}
+.flex-item-row:hover { 
     -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
@@ -182,7 +211,7 @@ export default {
 }
 .issue-info {
     margin: 0px;
-    text-align: left;
+    text-align: middle;
     text-justify: inter-word;
 }
 button {
