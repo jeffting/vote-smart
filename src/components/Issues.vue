@@ -8,7 +8,7 @@
                 <p class="issue-info">The US economy is currently in its longest expansion ever, and unemployment is at a record low. That's music to President Trump's ears. But the country's also dealing with rising income inequality and stagnant wages.</p>
             </div>
             <div class="flex-item-row" v-on:click="issueClick('abortion')">
-                <img class="issue-img-container" src="../assets/baby.jpg">
+                <img class="issue-img-container" src="../assets/pregnancy_test.jpg">
                 <h3 class="issue-title">Abortion</h3>
                 <p class="issue-info" >Abortion rates have been going down for decades. But with the recent wave of statewide abortion restrictions, the issue has taken a front seat in the 2020 election.</p>
             </div>
@@ -90,13 +90,17 @@ export default {
     width: 22%;
     margin-bottom: 8px;
     padding: 16px 8px 16px 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    border-radius: 4px;
+    
+    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1); */
 }
 .flex-item-row:hover {
     cursor: pointer;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
 }
 .issue-title {
     margin-top: 8px;
@@ -105,7 +109,7 @@ export default {
 .issue-info {
     margin: 0px;
     text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
 }
 
 </style>

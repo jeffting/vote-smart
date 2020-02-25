@@ -27,7 +27,7 @@
                         <button @click="routeToIssues" type="button">VIEW THE ISSUES</button> -->
                     </div>
                 </div>
-                <img class="main_picture" src="../assets/vote1.jpg">`
+                <img class="main_picture" src="../assets/vote2.jpg">`
             </div>
         </div>
         <div  style="background-color: #f4f4f4">
@@ -59,6 +59,9 @@ export default {
         },
         routeToCandidates() {
             this.$router.push('Candidates')
+        },
+        issueClick(issue) {
+            this.$router.push({name: 'Issue', params: {issue: issue}})
         }
     }
 };
@@ -86,9 +89,9 @@ export default {
 }
 .information {
     display: inline;
-    width: 50%;
+    width: 45%;
     position: absolute;
-    top: 27%;
+    top: 23%;
     margin-left: 5%;
 }
 .main_picture {
@@ -143,20 +146,6 @@ export default {
 .title-flex-item {
     flex-grow: .6;
 }
-.flex-item-row {
-    width: 22%;
-    margin-bottom: 8px;
-    padding: 16px 8px 16px 8px;
-    border-radius: 8px;
-    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1); */
-}
-.flex-item-row:hover { 
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-}
 .flex-item-row:hover {
     cursor: pointer;
 }
@@ -172,7 +161,7 @@ export default {
 button {
     background-color: #222222;
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 16px;
     width: 200px;
     height: 56px;
