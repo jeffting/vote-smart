@@ -17,6 +17,9 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+body {
+  margin: 0;
+}
 #app {
   font-family: 'Open Sans', sans-serif; /* Avenir', Helvetica, Arial, sans-serif; */
   font-weight: 400;
