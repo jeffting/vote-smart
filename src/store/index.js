@@ -517,50 +517,331 @@ export default new Vuex.Store({
           {
               id: "economy",
               name: "Economy",
-              info: "Info taken from theskimm.com. The US economy is currently in its longest expansion...ever. Unemployment is at a record low, there’s been steady GDP growth, and the stock market hit a number of record highs last year. But the economy has been slowing down. That’s because of things like the US-China trade war, which has hurt industries like farming and manufacturing. In 2019, the Fed started cutting interest rates for the first time since the 2008 financial crisis with the hope of avoiding a recession. That’s contributed to things like lower mortgage rates, which have helped the housing market grow. And recession alarm bells have died down a bit, especially since trade tensions around the world (see: the US-China trade war, the new NAFTA deal) have cooled off. Meanwhile, income inequality has become a focus of the 2020 campaign. In 2018, the gap between the US’s wealthiest and poorest families hit a 50-year high. Some of the reasons: a decline in labor unions, the federal minimum wage staying stagnant at $7.25, and tax policies that favor wealthier families. Candidates have different ideas on how to fix the problem. See: universal basic income, “baby bonds,” a tax on the country’s richest people, and tax breaks for the lower and middle classes. Speaking of taxes: back in 2017, Republicans overhauled the country’s tax code for the first time in decades. It included tax cuts in every income bracket and for big corporations. The cuts contributed to the US deficit reaching nearly $1 trillion in 2019. Candidates from both parties have criticized the Trump admin for allowing that number to get so high.",
+              info: [
+                  {
+                      text: "Info taken from theskimm.com.",
+                  },
+                  {
+                      text: 'The US economy is currently in its longest expansion...ever.'
+                  },
+                  {
+                      text: 'Unemployment is at a record low, there’s been steady GDP growth, and the stock market hit a number of record highs last year.'
+                  },
+                  {
+                      text: 'But the economy has been slowing down. That’s because of things like the US-China trade war, which has hurt industries like farming and manufacturing.'
+                  },
+                  {
+                      text: 'And recession alarm bells have died down a bit, especially since trade tensions around the world (see: the US-China trade war, the new NAFTA deal) have cooled off.'
+                  },
+                  {
+                    text: 'In 2018, the gap between the US’s wealthiest and poorest families hit a 50-year high. Some of the reasons: a decline in labor unions, the federal minimum wage staying stagnant at $7.25, and tax policies that favor wealthier families.'
+                },
+                {
+                    text: 'Back in 2017, Republicans overhauled the country’s tax code for the first time in decades. It included tax cuts in every income bracket and for big corporations. The cuts contributed to the US deficit reaching nearly $1 trillion in 2019. Candidates from both parties have criticized the Trump admin for allowing that number to get so high.'
+                },
+              ],
+              opinions: [
+                {
+                    name: 'Joe Biden',
+                    text: 'He wants to raise minimum wage to $15/hr and reverse parts of the 2017 tax law, giving tax credits to lower income families.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He wants to Raise minimum wage to $15/hr and raise taxes on "wealthy people like him" (but he is against the wealth tax proposed by Sen. Elizabeth Warren).'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He wants to raise minimum wage to $15/hr, expand the Earned Income Tax Credit, and expand job training programs.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She wants to raise minimum wage to $15/hr by 2024, then tie it to median wage growth.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She wants to focus on "heartland economics": make it a priority to help rural workers and the agriculture industry. She also wants to raise minimum wage to $15/hr and add tax credits to help retrain workers that lose jobs to automation.'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'He wants to raise minimum wage to $15/hr, up income tax rates on the wealthy. Says economy is “rigged” in favor of Wall Street and the rich, doesn’t think billionaires “should exist”'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'He wants to raise minimum wage to $15/hr. Calls a living wage one of the “5 Rights” all Americans should have.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'What he has done so far: 2017 tax bill reduced corporate taxes, unemployment rate has reached 50-year low while he\'s been in office, and he has reached new trade deal with Canada and Mexico.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She wants to raise minimum wage to $15/hr. She has also proposed an ultra-millionaire tax for richest 0.1% of Americans: raise nearly $3 trillion that can be used to “rebuild the middle class”. She would break up Google, Facebook and Amazon, says they have too much power and harm small businesses.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He doesn\'t support Trump’s tariffs. Instead he wants to cut the deficit and taxes, and prioritize cutting gov spending'
+                },
+              ],
               picture: require("../assets/money.jpg")
           },
           {
             id: "abortion",
             name: "Abortion",
-            info: "Info taken from theskimm.com. In 1973, the US Supreme Court ruled in Roe v. Wade that a woman’s right to privacy encompasses the right to abortions. But SCOTUS left room for some state regulation, like on how late into a pregnancy women can have an abortion. And Americans have strong opinions about when abortions should be allowed, if ever. Those who are pro-abortion rights point out that Roe v. Wade is the law of the land. And that women have the right to safe, legal abortions. They note that when states restrict abortions, women from poorer, rural communities tend to be affected – while wealthier women are able to afford travel to other states. Meanwhile, those who are anti-abortion rights think the arguments behind Roe v. Wade were a stretch, because the right to privacy isn’t explicitly mentioned anywhere in the Constitution. President Trump has supported abortion rights in the past, but said on the 2016 campaign trail that he would appoint Supreme Court justices who'd overturn Roe v. Wade. Since then, he’s appointed two new conservative justices. Meanwhile, several states have passed bills that ban abortions when a fetal heartbeat is detected. That can happen at around six weeks into a pregnancy, before many women know they’re pregnant. A lot of these bills have been blocked by the courts. But that’s the point: to appeal these cases until they make their way to the Supreme Court, where a solidly conservative majority could overturn Roe v. Wade.",
-            picture: require("../assets/baby.jpg")
+            picture: require("../assets/pregnancy_test.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+                {
+                    text: "In 1973, the US Supreme Court ruled in Roe v. Wade that a woman’s right to privacy encompasses the right to abortions. But SCOTUS left room for some state regulation, like on how late into a pregnancy women can have an abortion.",
+                },
+                {
+                    text: "Americans have strong opinions about when abortions should be allowed, if ever.",
+                },
+                {
+                    text: " Those who are pro-abortion rights point out that Roe v. Wade is the law of the land. And that women have the right to safe, legal abortions. They note that when states restrict abortions, women from poorer, rural communities tend to be affected – while wealthier women are able to afford travel to other states.",
+                },
+                {
+                    text: "Those who are anti-abortion rights think the arguments behind Roe v. Wade were a stretch, because the right to privacy isn’t explicitly mentioned anywhere in the Constitution.",
+                },
+                {
+                    text: "President Trump has supported abortion rights in the past, but said on the 2016 campaign trail that he would appoint Supreme Court justices who'd overturn Roe v. Wade.",
+                },
+                {
+                    text: "A solidly conservative majority could overturn Roe v. Wade.",
+                },
+            ],
+            opinions: [
+                {
+                    name: 'Joe Biden',
+                    text: 'Mixed record on abortion: in the \'80s, he voted for bill that would’ve let states override Roe v. Wade – now he says he’d defend Roe v. Wade.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'As mayor, promoted a policy requiring doctors in city hospitals to be trained in abortion practices. He has donated millions to women\'s health orgs.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He says the government shouldn’t interfere with a woman’s right to choose, would make sure any Supreme Court appointments respect that. Wouldn’t pursue policies against Planned Parenthood.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She is pro-abortion rights, though has been opposed to abortion in the past.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She wants to codify Roe v. Wade – aka get Congress to pass legislation protecting abortion rights. She would appoint judges who support Roe v. Wade.'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'He wants to codify Roe v. Wade and would appoint judges who support Roe v. Wade.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'He was Would protect a woman\'s right to choose.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'During his \'16 campaign, said he\'d appoint Supreme Court justices who\'d overturn Roe v. Wade. He is against abortions except in three instances: rape, incest, and if the mother’s life is at risk.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She is pro-abortion rights and wants Congress to pass federal laws that protect women’s access to reproductive care (like birth control and abortions). She would codify Roe v. Wade and Appoint judges who respect Roe v. Wade.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He is Pro-abortion rights and wants to expand legal access to abortion.'
+                },
+            ]
         },
         {
             id: "climate",
             name: "Climate Change",
-            info: "Info taken from theskimm.com. The US is one of the largest contributors to the carbon emissions that are fueling climate change. And international outrage, particularly among young people, about a lack of action has made it a high-profile issue in the 2020 race. The United Nations has issued multiple reports warning about the potential “catastrophic” effects of climate change if countries don’t do more to keep Earth’s temp from rising. Like more frequent droughts and flooding, and extreme heat that could lead to things like food shortages and potentially affect hundreds of millions of people. The Trump administration has taken many steps to roll back Obama-era climate policies, like loosening regulations for carbon emissions and pulling the US out of the Paris climate deal. Meanwhile, the Dem candidates pretty much all agree that climate change is a dire problem that needs to be addressed stat. But they have different ideas about the best solutions. You’ll likely hear them talking about their plans for achieving net-zero emissions. That means the amount of greenhouse gases emitted into the atmosphere doesn’t exceed the amount taken out. Taken out how, you might ask? Through methods like reducing the use of diesel cars, cutting meat and dairy consumption, and even planting trees.",
-            picture: require("../assets/sun.jpeg")
+            picture: require("../assets/sun.jpeg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+                {
+                    text: "The US is one of the largest contributors to the carbon emissions that are fueling climate change.",
+                },
+                {
+                    text: "The United Nations has issued multiple reports warning about the potential “catastrophic” effects of climate change if countries don’t do more to keep Earth’s temp from rising.",
+                },
+                {
+                    text: "The Trump administration has taken many steps to roll back Obama-era climate policies, like loosening regulations for carbon emissions and pulling the US out of the Paris climate deal. Meanwhile, the Dem candidates pretty much all agree that climate change is a dire problem that needs to be addressed stat.",
+                },
+            ],
+            opinions: [
+                {
+                    name: 'Joe Biden',
+                    text: 'He has been saying \'mayday\' since the 1980s, and sees climate change as security threat. He would work toward net-zero greenhouse gas emissions by 2050.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He is investing $500 million of his own money to help the US achieve a 100% clean energy economy. Before the race, he announced campaign to close all US coal power plants by 2030, get “climate champions” elected to local offices.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He would rejoin Paris climate deal and establish a carbon tax. He would also up the budget for renewable energy research and development.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She has a plan to help the US achieve 100% renewable energy by 2035.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She sees Green New Deal – a plan to achieve net-zero greenhouse gas emissions, create jobs in clean energy, and move the US to 100% renewable energy sources by 2050 – as "aspirational".'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'He has the most expensive plan: it would cost $16.3 trillion. That money would go toward: 100% sustainable electricity and transportation by 2030, carbon-neutral economy by 2050, and 20 million new jobs.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'Started super PAC to fight climate change, among other things. He\'d declare climate change a national emergency and wants to start a Peace Corps, but for the environment.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'Started the process of pulling the US out of the Paris climate deal, which will be completed by Nov 2020. He also worked to weaken Obama-era environmental rules.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She has a $3 trillion plan to Eliminate greenhouse emissions from power plants, cars, and buildings in 10 years. She supports Green New Deal.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He would rejoin Paris climate deal.'
+                },
+            ]
         },
         {
             id: "education",
             name: "Education",
-            info: "Info taken from theskimm.com. In the past few decades, the cost of college has gone up, up, annnd up, contributing to the nation’s $1.5 trillion student debt problem. Millennials are saying 'we wish' to traditional milestones that contribute to economic growth – like buying a house. Some are graduating with debt only to be underemployed. All of this has led to a debate about how to make college more affordable and help graduates manage their debt. Proposals from 2020 candidates range from making four-year public schools completely free to increasing debt forgiveness for certain professions. Meanwhile, a wave of teacher strikes that started in 2018 brought attention to low teacher salaries. Some candidates are pushing plans to use federal dollars to help subsidize teacher pay. Other issues you’ll hear about on the campaign trail: whether the government should fund a national pre-kindergarten program (sometimes referred to as universal pre-k). Candidates also have strong feelings about school choice, aka allowing families to choose to send their kids to charter or even private schools with the help of taxpayer dollars.",
-            picture: require("../assets/school.jpg")
+            picture: require("../assets/school.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+                {
+                    text: "In the past few decades, the cost of college has gone up, up, annnd up, contributing to the nation’s $1.5 trillion student debt problem.",
+                },
+                {
+                    text: "Meanwhile, a wave of teacher strikes that started in 2018 brought attention to low teacher salaries.",
+                },
+                {
+                    text: "Candidates also have strong feelings about school choice, aka allowing families to choose to send their kids to charter or even private schools with the help of taxpayer dollars.",
+                },
+                {
+                    text: "Other issues you’ll hear about on the campaign trail: whether the government should fund a national pre-kindergarten program (sometimes referred to as universal pre-k).",
+                },
+            ],
+            opinions: [
+                {
+                    name: 'Joe Biden',
+                    text: 'He wants to grant two years of free community college or job training, universal pre-k for three and four-year-olds, increase funding for schools with a high percentage of students from low-income families, and up teachers\' paychecks, give them more student loan forgiveness.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He supported charter schools as NYC mayor. Once he donated $1.8 billion to his alma mater to support financial aid for students – the largest ever individual donation to a university.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He wants to expand access to Pell Grants, make it easier to refinance student loans, and add more debt forgiveness programs.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She suggests free community college and free public universities for families making up to $125k/yr.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She thinks free college tuition and erasing student debt is unrealistic. She suggests all for free tuition for two-year community colleges and letting students refinance loans at lower interest rates.'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'He wants tuition-free four-year public college and lower student loan interest rates.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'He wants to let students refinance loans and expand student loan forgiveness for public servants.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'He supports school vouchers (giving students public funds to go to private or charter schools). He also proposed a cap to the amount of federal student loans graduate students and parents can take on.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She wants rree public college for everyone. Has a plan to cancel up to $50,000 in student loan debt for families making less than $100k/yr. She also suggests universal child care from birth to school age – free for families 200% above federal poverty line, affordable for everyone else.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He wants to eliminate Dept of Education to reportedly give more control to local govs. He wants to make community college tuition-free for people who lose their jobs to automation.'
+                },
+            ]
         },
         {
             id: "guns",
             name: "Guns",
-            info: "Info taken from theskimm.com. It’s been 25 years since Congress passed comprehensive gun control legislation. And in 2017, gun deaths reached the highest they’ve been in decades. A string of mass shootings in recent years (see: Las Vegas, Orlando, Charleston, El Paso, Dayton, Parkland) have amplified the issue for American voters and ignited new calls for action by lawmakers. The 2018 shooting at a high school in Parkland, FL was a turning point in the gun control conversation. A new generation of young, vocal gun control activists were crucial in getting younger voters to turn out in the 2018 midterms. And that could be the case again in 2020. Shootings last year in cities including Dayton, OH and El Paso, TX made gun control a central talking point on the campaign trail for Democrats. Voters in both parties agree on some key proposals: most Americans say gun laws should be stricter; a majority of both GOP and Dem voters are in favor of restricting gun sales to people with mental illnesses; and a majority in both parties favor background checks for private gun sales, and at gun shows. Here’s where the parties and candidates start to differ. The Democratic candidates all agree on banning assault-style weapons and high-capacity magazines – which can be defined as capable of holding more than 10 rounds. They disagree on things like mandatory buyback programs and gun registries. Some in the GOP have a different set of proposals in mind. President Trump supports ideas like teachers carrying firearms in schools, and giving states the power to regulate gun laws instead of using federal mandates.",
-            picture: require("../assets/gun.jpg")
+            picture: require("../assets/gun.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+            ],
+            opinions: [
+                {
+                    name: '',
+                    text: ''
+                },
+            ]
         },
         {
             id: "health",
             name: "Health Care",
-            info: "Info taken from theskimm.com. US health care is the most expensive in the world. So expensive that a health emergency can put a family into bankruptcy. Some Americans are covered by Medicaid or Medicare, two gov programs that help cover older, lower-income, and disabled Americans. Since 2014, Obamacare has let states expand who can be covered under Medicaid and worked to make it easier for people to buy insurance outside of employer-provided plans. Still, 8.5% of Americans (27.5 million people) are uninsured. And even those who are insured can face significant health care costs because of things like high deductibles or copays. All of this means making health care more affordable and accessible is one of the most fiercely debated topics in politics. And a no. 1 issue for some voters. Some Democratic presidential candidates are proposing Medicare for All – abolishing private insurance and getting everyone in the US on a government-run plan. The move means everyone gets the same insurance, regardless of income. But other Dems don’t see the benefit of taking a pen to the entire US health care system. They want to keep the private insurance market but let everyone who wants Medicare opt in. Meanwhile, many on both sides of the aisle – including President Trump – want to focus on lowering specific health care costs (like drug prices) rather than just the insurance part.",
-            picture: require("../assets/health.jpg")
+            picture: require("../assets/health.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+            ],
+            opinions: [
+                {
+                    name: '',
+                    text: ''
+                },
+            ]
         },
         {
             id: "immigration",
             name: "Immigration",
-            info: "Info taken from theskimm.com. Trump has made curbing illegal immigration a top priority. See: demands to extend the US-Mexico border wall, attempts to end DACA (the Obama-era program that protects immigrants, known as Dreamers, brought here illegally as kids from deportation), and the “zero tolerance” policy that led to thousands of families being separated at the border. Those who support the admin’s moves say the US needs to keep the country safe. Critics argue that it’s the US’s moral responsibility to accept immigrants and refugees who come here for a better life, and that immigrants help boost the economy. Some Democratic candidates have called for reforming Immigration and Customs Enforcement (ICE) – the agency that oversees deportations – because they believe it has too much power. Their solutions range from reducing its responsibilities to completely getting rid of it. The Trump admin has also tried to overhaul legal immigration. It’s announced policies that favor merit-based immigration (think: giving priority to highly skilled immigrants or those who speak English) over family-based immigration. The admin claims this would ensure immigrants don’t take jobs and money from America’s working class. And this year, Trump added more countries to his controversial travel ban over national security concerns. The initial ban blocked people traveling from some Muslim-majority countries.",
-            picture: require("../assets/statue.jpg")
+            picture: require("../assets/statue.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+            ],
+            opinions: [
+                {
+                    name: '',
+                    text: ''
+                },
+            ]
         },
         {
             id: "security",
             name: "National Security",
-            info: "Info taken from theskimm.com. There are a wide variety of issues that could affect the safety and security of Americans: everything from the threat of terrorism and nuclear war to gun control and climate change. President Trump ran on a platform of extending the US-Mexico border wall – and tends to treat illegal immigration as a national security threat. But both parties agree the US faces threats abroad: like Russia, because of its interference in the 2016 election process and concerns it could interfere in 2020 as well. Iran and China are also believed to pose serious cybersecurity threats to US elections. Meanwhile, ISIS. Even though it lost territory in Iraq and Syria, the group maintains cells around the world. That includes in Afghanistan, where the US has thousands of troops stationed to help contain terror threats, like ISIS and the Taliban.",
-            picture: require("../assets/security.jpg")
+            picture: require("../assets/security.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+            ],
+            opinions: [
+                {
+                    name: '',
+                    text: ''
+                },
+            ]
         },
           
       ]

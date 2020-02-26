@@ -18,18 +18,11 @@
         <div class="content">
             <div class="details">
                 <div class="video-div">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/f4nxBKdNO6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <iframe width="560" height="315" :src="video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <!-- <div class="detail">
-                    <h3 v-bind:class="[{ h3Democrat: isDemocrat }, { h3Republican: isRepublican }]">Who is {{ name }}?</h3>
-                    <hr v-bind:class="[{ hrDemocrat: isDemocrat }, { hrRepublican: isRepublican }]">
-                    <p> {{ background }}</p>
-                </div>                 -->
                 <div>
-                    <!-- <hr v-bind:class="[{ hrDemocrat: isDemocrat }, { hrRepublican: isRepublican }]"> -->
                     <h3 v-bind:class="[{ h3Democrat: isDemocrat }, { h3Republican: isRepublican }]">Opinions</h3>
-                    <div v-for="opinion in opinions" :key="opinion.value">
+                    <div class="opinion-div" v-for="opinion in opinions" :key="opinion.value">
                         <ul>
                             <li class="issue-li" @click="routeToIssue(opinion.topic)"> <u><b>{{ opinion.topic }}</b></u>: {{ opinion.text }}</li>
                         </ul>
@@ -50,7 +43,7 @@ export default {
   },
   methods: {
         routeToIssue(issue) {
-            this.$router.push({name: 'Issue', params: {name: issue}})
+            this.$router.push({name: 'Issue', params: {issue: issue.toLowerCase()}})
             // this.$router.push('Profile')
         },
     },
@@ -166,7 +159,7 @@ hr {
 h3 {
     text-align: center;
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .h3Republican {
     background-color: #BF0A30;
@@ -183,6 +176,13 @@ h3 {
 }
 .issue-li:hover {
     cursor: pointer;
+}
+.opinion-div:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    border-radius: 4px;
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>CANDIDATES</h2>
+        <h1>CANDIDATES</h1>
         <div class="row">
             <div class="column">
                 <h2 class="text-democrat">Democrat</h2>
@@ -109,13 +109,13 @@ h3 {
     background-color: #BF0A30;
     color: white;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .text-democrat {
     background-color: #002868;
     color: white;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .candidate-div {
 }
