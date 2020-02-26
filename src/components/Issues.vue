@@ -98,6 +98,7 @@ export default {
 }
 .flex-item-row:hover {
     cursor: pointer;
+    transition: box-shadow linear 0.2s;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
@@ -109,7 +110,6 @@ export default {
 .issue-info {
     margin: 0px;
     text-align: justify;
-    text-align: left;
 }
 
 </style>

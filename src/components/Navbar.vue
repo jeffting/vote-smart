@@ -88,5 +88,6 @@ export default {
   background-color: #f4f4f4;
   position: fixed;
   width: 100vw;
+  z-index: 1000;
 }
 </style>
