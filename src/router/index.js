@@ -6,6 +6,7 @@ import Quiz from '@/components/Quiz'
 import Candidates from '@/components/Candidates'
 import Profile from '@/components/Profile'
 import Issue from '@/components/Issue'
+import Results from '@/components/Results'
 
 Vue.use(Router)
 
@@ -40,6 +41,16 @@ export default new Router({
       path: '/Issues/:issue',
       name: 'Issue',
       component: Issue
+    },
+    {
+      path: '/Quiz/results',
+      name: 'results',
+      component: Results,
+      props: true
     }
-  ]
+
+  ],
+  scrollBehavior() {
+    return {x: 0, y: 0}
+}
 })

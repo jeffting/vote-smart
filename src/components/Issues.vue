@@ -1,6 +1,6 @@
 <template>
     <div class="col-flex">
-        <div class="title-flex-item"><h1>Political Issues</h1></div>
+        <div class="title-flex-item"><h2>Political Issues</h2></div>
         <div class="row-flex">
             <div class="flex-item-row" v-on:click="issueClick('economy')">
                 <img class="issue-img-container" src="../assets/money.jpg">

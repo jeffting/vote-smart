@@ -578,6 +578,11 @@ export default new Vuex.Store({
     getIssueByName: (state) => (id) => {
         return state.issues.find(issue => issue.id == id)
     },
+    getMainCandidates: (state) => () => {
+        return state.candidates.filter((person) => {
+            return person.name === "Bernie Sanders" || person.name === "Donald Trump" || person.name === "Elizabeth Warren" || person.name === "Joe Biden" || person.name === "Pete Buttigieg";
+        }) 
+    }
   },
   mutations: {
     SET_PAGE: (state, newValue) => {

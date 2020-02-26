@@ -52,6 +52,7 @@ export default {
     },
     methods: {
         routeToProfile(candidate) {
+            console.log(candidate)
             this.$router.push({name: 'Profile', params: {name: candidate}})
             // this.$router.push('Profile')
         },
