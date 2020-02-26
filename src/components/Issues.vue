@@ -74,8 +74,6 @@ export default {
     margin-right: 10%;
     /* height: 70vh; */
     margin-bottom: 32px;
-
-    
 }
 .row-flex {
     display: flex;
@@ -109,7 +107,7 @@ export default {
 }
 .issue-info {
     margin: 0px;
-    text-align: justify;
+    text-align: left;
 }
 
 </style>
