@@ -62,9 +62,13 @@ export default {
     border: 4px solid transparent;
 }
 .tab-button:hover {
-    border-radius: 4px;
+  border-radius: 4px;
+  border: 4px solid;
+  border-color: #002868 #BF0A30 #BF0A30 #002868; 
+  
+    /* border-radius: 4px;
   border-style: solid;
-  border-color: #002868 #BF0A30 #BF0A30 #002868;
+  border-color: #002868 #BF0A30 #BF0A30 #002868; */
 }
 .full-navbar {
   border-bottom-style: solid;
@@ -79,9 +83,9 @@ export default {
   width: 42px;
 }
 .selected {
+  background-color: #222222;
+  color: white;
   border-radius: 4px;
-  border: 4px solid;
-  border-color: #002868 #BF0A30 #BF0A30 #002868; 
 } 
 .main-nav {
   padding: 8px 8px 0px 8px; 
