@@ -25,7 +25,7 @@
                         <button @click="routeToIssues" type="button">VIEW THE ISSUES</button> -->
                     </div>
                 </div>
-                <img class="main_picture" src="../assets/vote2.jpg">`
+                <img class="main_picture" src="../assets/vote2.jpg">
             </div>
         </div>
         <div  style="background-color: #f4f4f4">
