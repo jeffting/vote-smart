@@ -23,6 +23,9 @@
                 <div>
                     <h3 v-bind:class="[{ h3Democrat: isDemocrat }, { h3Republican: isRepublican }]">Opinions</h3>
                     <div class="opinion-div" v-for="opinion in opinions" :key="opinion.value">
+                        <div class="image-cropper image-issue">
+                            <img v-bind:src=getIssuePhoto(opinion.id)>
+                        </div>
                         <ul>
                             <li class="issue-li" @click="routeToIssue(opinion.topic)"> <u><b>{{ opinion.topic }}</b></u>: {{ opinion.text }}</li>
                         </ul>
@@ -49,6 +52,10 @@ export default {
             this.$router.push({name: 'Issue', params: {issue: issue.toLowerCase()}})
             // this.$router.push('Profile')
         },
+        getIssuePhoto(name) {
+            console.log(name)
+          return this.$store.getters.getIssueByName(name).picture
+      }
     },
   computed: {
     background: function () {
@@ -99,15 +106,24 @@ export default {
     width: 288px; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 48px;
     display: flex; 
     justify-content: center;
 }
 .imageDemocrat {
     border: 6px solid #002868;
+    margin-top: 48px;
 }
 .imageRepublican {
     border: 6px solid #BF0A30;
+    margin-top: 48px;
+}
+.image-issue {
+    float: left;
+    height: 72px; 
+    width: 72px; 
+    object-fit: cover;
+    /* margin-bottom: 15px; */
+    border: 3px solid transparent;
 }
 .profile-div {
     text-align: center;
@@ -125,7 +141,7 @@ iframe {
     padding-top: 32px;
 }
 .details {
-    width: 70%;
+    width: 50%;
     display: inline-block;
     text-align: left;
     /* background-color: #F4F4F4;
@@ -177,15 +193,25 @@ h3 {
     padding-left: 24px;
     padding-right: 24px; */
 }
-.issue-li:hover {
-    cursor: pointer;
+.issue-li {
+    margin-left: 48px;
+}
+.opinion-div {
+    height: 120px;
+    
+}
+.opinion-div ul {
+    list-style-type: none;
+}
+.opinion-div:hover > .image-issue {
+    border: 3px solid #222222;
 }
 .opinion-div:hover {
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    border-radius: 4px;
+    border-radius: 4px; */
 }
 
 </style>

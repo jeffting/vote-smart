@@ -19,9 +19,9 @@
                 <div>
                     <h3>Opinions</h3>
                     <div class="opinion-div" v-for="opinion in issueObj.opinions" :key="opinion.value">
-                        <!-- <div class="image-cropper image-candidate">
+                        <div class="image-cropper image-candidate">
                             <img v-bind:src=getCandidatePhoto(opinion.name)>
-                        </div> -->
+                        </div>
                         <ul class="candidate-opinion">
                             <li class="candidate-li" @click="routeToProfile(opinion.name)"> <u><b>{{ opinion.name }}</b></u>: {{ opinion.text }}</li>
                         </ul>
@@ -63,8 +63,7 @@ export default {
 img {   
     height: 100%;
 }
-.image-cropper {
-    
+.image-cropper {   
     overflow: hidden;
     border-radius: 50%;
     margin-left: auto;
@@ -82,8 +81,9 @@ img {
     float: left;
     height: 72px; 
     width: 72px; 
-    display:inline;
-    margin-bottom: 15px;
+    object-fit: cover;
+    /* margin-bottom: 15px; */
+    border: 3px solid transparent;
 }
 .points {
     width: 40%;
@@ -110,7 +110,7 @@ img {
     padding-right: 24px; */
 }
 .details {
-    width: 70%;
+    width: 50%;
     display: inline-block;
     text-align: left;
     /* background-color: #F4F4F4;
@@ -126,15 +126,23 @@ h3 {
     cursor: pointer;
 }
 .candidate-opinion {
-    /* float: right;
-    display:inline; */
-    /* width: 85%; */
+    margin-left: 48px;
+    list-style-type: none;
+}
+.opinion-div {
+    height: 100px;
+    padding: 0px;
+    padding-top: 0px;
+}
+.opinion-div:hover > .image-candidate {
+    border: 3px solid #222222;
 }
 .opinion-div:hover {
     cursor: pointer;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
+    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
     box-shadow: 2px 2px 5px 0px rgba(133,133,133,1);
-    border-radius: 4px;
+    border-radius: 4px; */
+    
 }
 </style>

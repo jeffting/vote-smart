@@ -17,23 +17,23 @@ export default new Vuex.Store({
             description:'Sen. Michael Bennet (D-CO) is looking for his Golden Ticket (read: your vote) to the White House. Back in April, he was diagnosed with prostate cancer. And said he would run for president if he was declared cancer-free. A successful surgery got him here.',
             opinions: [
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'Another top campaign issue for him. He has supported expanding Pell Grants (a federal program that helps low-income students pay for college).',
                 },
                 {
-                    topic: 'IMMIGRATION',
-                    text: 'He\'s a proud part of the Gang of Eight that supported more border security measures, and a path to citizenship for some undocumented immigrants. Earlier this year, he tried to stop a gov shutdown by giving President Trump the $25 billion he wanted for a border wall in exchange for protections for Dreamers. He was visibly upset when it didn\t work out – and a video of him giving an emotional speech went viral.',
+                    id: "immigration", topic: 'IMMIGRATION',
+                    text: 'He\'s a proud part of the Gang of Eight that supported more border security measures, and a path to citizenship for some undocumented immigrants. Earlier this year, he tried to stop a gov shutdown by giving President Trump the $25 billion he wanted for a border wall in exchange for protections for Dreamers. Unfortunaltly, it didn\'t work out.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He supports what he calls Medicare-X – which he says would be a public plan that would offer Americans low-cost health insurance choices and create more competition.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'He wants to rejoin the Paris climate deal and provide tax incentives for people to be more energy efficient. But he’s also criticized Democrats for advocating getting rid of coal and oil plants without proposing new jobs.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'He’s sent mixed messages. He’s called for background checks after shootings in Las Vegas and Virginia Beach. He also voted to limit high-capacity magazines. But also says he’s opposed to restricting the right to bear arms.',
                 },
             ],
@@ -52,27 +52,27 @@ export default new Vuex.Store({
             description: 'Before serving as former President Obama’s veep, Biden was Delaware’s longest-serving senator – first elected in 1972 at age 29. This is his third run for president (he also ran in 1988 and 2008).',
             opinions: [
                 {
-                    topic: 'ABORTION',
-                    text: 'He has a mixed record on the issue, which he’s struggled with as a devout Catholic. In 1982, he voted for a bill that, if passed, would’ve let states override Roe v Wade. He has since said he’d defend Roe v Wade as president. He said he no longer supports the Hyde Amendment (which bars federal funding going toward most abortions)...a day after his campaign said he still supports it and after pushback from other Dems.',
+                    id: "abortion", topic: 'ABORTION',
+                    text: 'He has a mixed record on the issue, which he’s struggled with as a devout Catholic. In 1982, he voted for a bill that, if passed, would’ve let states override Roe v Wade. He has since said he’d defend Roe v Wade as president. He said he no longer supports the Hyde Amendment (which bars federal funding going toward most abortions).',
                 },
                 {
-                    topic: 'EDUCATION',
-                    text: 'He wants to offer two years of free (read: taxpayer-funded) community college or job training and universal pre-k for three and four-year-olds. He’ll reinstate Obama-era policy that aims to make sure schools are working to desegregate, and wants to triple funding for schools with a high percentage of students from low-income families. Plus give teachers an assist by upping their paychecks and providing them more help with student loan forgiveness.',
+                    id: "education", topic: 'EDUCATION',
+                    text: 'He wants to offer two years of free (read: taxpayer-funded) community college or job training and universal pre-k for three and four-year-olds. He’ll reinstate Obama-era policy that aims to make sure schools are working to desegregate, and wants to triple funding for schools with a high percentage of students from low-income families.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He wants to expand the Affordable Care Act by giving Americans the choice of a public health insurance option in addition to letting people keep employer-based plans. He would give Medicare the power to directly negotiate drug prices. He also plans to let consumers get prescription drugs from other countries to create more competition for US drug corporations.',
                 },
                 {
-                    topic: 'ECONOMY',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
                     text: 'Addressing income inequality and workers’ rights are his priorities. Some highlights: let\'s enact a $15/hr minimum wage and ban non-compete agreements that stop workers from taking jobs with competitors. He also wants to reverse Trump’s tax law and give tax credits to lower income families.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
-                    text: 'Something he\'s been saying \'mayday\' about since the 1980s. He calls climate change \"the greatest threat to our security.\" So what\'s he going to do about it? Rejoin the 2015 Paris climate deal on his first day in office. Start a "major diplomatic push" to get other countries to up their emissions-cutting ambition. Get the US to net-zero greenhouse gas emissions no later than 2050. Btw, he\'d foot his climate change plan by reversing Trump\'s 2017 corporate tax cuts.',
+                    id: "climate", topic: 'CLIMATE CHANGE',
+                    text: 'Something he\'s been saying \'mayday\' about since the 1980s. He calls climate change \"the greatest threat to our security.\" So what\'s he going to do about it? Rejoin the 2015 Paris climate deal on his first day in office. Start a "major diplomatic push" to get other countries to up their emissions-cutting ambition. Get the US to net-zero greenhouse gas emissions no later than 2050.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'He supports several changes to gun policy, including reinstating an assault weapons ban, setting up a voluntary buyback program to get weapons off the streets, and closing loopholes on background checks. He might get some questions about his record on this issue. That\'s because in the 1980s he voted for the Firearm Owners Protection Act, which allowed gun dealers to sell weapons through the mail, online, and at gun shows. (The NRA called it "the law that saved gun rights.”)',
                 },
             ],
@@ -92,23 +92,23 @@ export default new Vuex.Store({
             description:'One of the world’s richest people just entered the 2020 Democratic race. He was NYC mayor from 2002 to 2013. He’s switched political parties multiple times: he was first elected mayor as a Republican, then registered as an independent, and later hopped on the Democratic train in 2018.',
             opinions: [
                 {
-                    topic: 'IMMIGRATION',
-                    text: 'He says the country needs immigrants to fill all the jobs out there. He also founded a pro-immigration advocacy group that pushes lawmakers to enact legislation to protect Dreamers. As mayor, he started programs to help immigrant entrepreneurs start and grow businesses, and enforced a policy still in place today that keeps immigration statuses confidential when immigrants interact with the city government (think: in certain situations, city agencies can’t ask about immigration status).',
+                    id: "immigration", topic: 'IMMIGRATION',
+                    text: 'He says the country needs immigrants to fill all the jobs out there. As mayor, he started programs to help immigrant entrepreneurs start and grow businesses, and enforced a policy still in place today that keeps immigration statuses confidential when immigrants interact with the city government (think: in certain situations, city agencies can’t ask about immigration status).',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He’s not into the idea of Medicare for All. He thinks that replacing the entire US health care system would “bankrupt us for a very long time.” But he’s open to an option that would provide health insurance to anyone who’s uncovered. Also, as mayor, he implemented a number of public health measures, including making NYC the first city to require calorie counts on menus for chain restaurants.',
                 },
                 {
-                    topic: 'ECONOMY',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
                     text: 'He wants wealthy people like him to pay more in taxes. But he’s against the wealth tax that fellow 2020 candidate Sen. Elizabeth Warren (D-MA) proposed. He said it’s “probably unconstitutional” and compared the idea to socialism, saying it’s similar to policies in Venezuela.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'Before he got into the race, he announced a campaign called Beyond Carbon. He’s investing $500 million of his own money to help the US achieve a 100% clean energy economy. Some of Beyond Carbon’s goals: get all coal power plants closed by 2030 and helps get candidates who are “climate champions” elected to local offices.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'A top issue for Bloomberg. He’s the primary funder of Everytown for Gun Safety, an advocacy group working to end gun violence. He supports universal background checks and an assault weapons ban. But he’s not a fan of mandatory buyback programs, which he thinks are impossible to enforce.',
                 },
             ],
@@ -127,19 +127,19 @@ export default new Vuex.Store({
             description:'Pete Buttigieg (it’s boot-edge-edge) knows his name is hard to pronounce. He’s running for president in 2020 anyway. He’s the millennial, Harvard grad, Rhodes Scholar, veteran of Afghanistan, and former mayor of South Bend, Indiana who’s got a ‘DC or bust’ sticker on the back of his car.',
             opinions: [
                 {
-                    topic: 'ABORTION',
+                    id: "abortion", topic: 'ABORTION',
                     text: 'He says the government shouldn’t interfere in a woman’s right to choose. And that as president, he would make sure any Supreme Court appointments respect that. He also wouldn’t pursue policies against Planned Parenthood.',
                 },
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'He has some plans concerning the student debt problem. He feels you – Buttigieg and his husband Chasten have six-figure debt from Chasten going to grad school. He has a few ideas including, expand access to Pell Grants, a federal program that helps low-income students pay for college, make it easier to refinance high-interest loans, and create more debt forgiveness programs.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'He\'d go all in on a carbon tax, “quadrupling” (yes, really) the budget for renewable energy R&D, and re-committing the US to the Paris climate deal.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'Yes to universal background checks. And making it harder for domestic abusers to get a firearm.',
                 },
             ],
@@ -166,23 +166,23 @@ export default new Vuex.Store({
             description:'Gabbard was the first American Samoan and first Hindu member elected to the House of Representatives, where she’s been since 2013. Before that she was in the Army National Guard, and deployed twice to the Middle East. At 38, she’s one of the youngest candidates in the race.',
             opinions: [
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'Community college should cost the low low price of...nothing. Same for public universities for families that make $125k a year or less.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'She gives Medicare for All a thumbs up. Early in her career, she was anti-abortion. She’s now pro-choice and called the restrictive Alabama abortion ban “extremely dangerous.” She says it would take away women’s liberty.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'She intro’d a plan in Congress that would do a few things. Including transition the US to 100% renewable energy by 2035. Still unclear what her plan would look like as president.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'Her take: let’s ban assault weapons already and get universal background checks in place.',
                 },
                 {
-                    topic: 'NATIONAL SECURITY',
+                    id: "security", topic: 'NATIONAL SECURITY',
                     text: 'Her favorite talking point. Gabbard is known for sounding off against foreign military intervention. And says that if the US was less tangled up abroad, the country would have more resources (read: money) to put toward domestic issues like health care and education. As president, she’d jump back into the Iran nuclear deal, and cool it on the drama with nuclear-armed countries (see: North Korea, Russia, China). Because make love, not war you know?',
                 },
             ],
@@ -200,19 +200,19 @@ export default new Vuex.Store({
             description:'Minnesota’s first female senator wants to become the US’s first female president. Say hello to Sen. Amy Klobuchar (D-MN). Psst...her last name is pronounced KLOH-buh-shar.',
             opinions: [
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'She thinks free college tuition and erasing all student debt is unrealistic. But she’s here for free tuition for two-year community colleges, expanding Pell Grants (federal aid for low-income college students), and letting students refinance their loans at lower interest rates.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'She’s not ready to embrace Medicare for All, but she wants to move towards universal health care that allows people to opt into government-run plans. She also wants to expand Medicare to include anyone that’s 55 and older (as opposed to 65 and older).',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'She’s saying yes to the Green New Deal as an “aspirational” starting point for addressing climate change. She also wants the US to rejoin the Paris climate deal – which set standards for pretty much the entire world to lower carbon emissions.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'She supports things like universal background checks, and a ban on assault weapons. But she also wants to make sure people who use guns for hunting wouldn’t be hurt by these measures.',
                 },
             ],
@@ -228,23 +228,23 @@ export default new Vuex.Store({
             description:'Deval Patrick’s motto: better late than never. In 2006, he was elected as Massachusetts’ first black governor – and served for eight years. After he left office, he worked at private equity firm Bain Capital as a managing director.',
             opinions: [
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'He says this is the public’s “single best investment.” And is in favor of universal pre-K and free community college.',
                 },
                 {
-                    topic: 'IMMIGRATION',
+                    id: "immigration", topic: 'IMMIGRATION',
                     text: 'He allowed undocumented immigrants in Massachusetts to qualify for in-state college tuition, and proposed letting hundreds of undocumented immigrants stay in MA during the 2014 migrant influx in the US. He hasn’t announced immigration policies as a presidential candidate, but is calling for a system that “provides for both border integrity and human dignity.”',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He supports high-quality, low-cost services, though he hasn’t given specifics on if or how he plans to implement that as president. Patrick’s called Medicare for All a “terrific idea” – but only if it’s rolled out with private options.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'Patrick helped make Massachusetts a “a leader” on this issue. During his two terms as governor, he implemented laws to lower carbon emissions and focused on upping the number of clean energy jobs.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'He’s said he supports a national ban on assault weapons. As governor, he signed a bill that overhauled the state’s gun laws. It added Massachusetts to a federal background check database, enforced stricter rules around carrying and transporting firearms, and gave police chiefs more power to block people from obtaining gun licenses if they seem dangerous.',
                 },
             ],
@@ -262,27 +262,27 @@ export default new Vuex.Store({
             description: 'Sanders has been in the political game for decades. He ran his first campaign for a Vermont Senate seat in the ‘70s. He lost. But eventually went on to serve as mayor of Burlington, VT before heading to the US House, then becoming a US senator in 2007. He’s the longest serving independent member of Congress.',
             opinions: [
                 {
-                    topic: 'ABORTION',
+                    id: "abortion", topic: 'ABORTION',
                     text: 'He says his Medicare for All plan will cover reproductive health care, including abortions. Although he has voted in favor of the Hyde Amendment in the past, he now says he would get rid of it. The amendment limits federal funding for abortions.',
                 },
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'Part of his 2016 run was a proposal to make four-year public college tuition-free and lower student loan interest rates. He hasn’t changed his mind.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'Medicare for All is his baby. As in a government-run health insurance program available to all Americans. He’s been talking about it since his 2016 run. This time around, he unveiled a new plan that goes even further by pretty much getting rid of private health insurance. Critics say this will cost way too much.',
                 },
                 {
-                    topic: 'ECONOMY',
-                    text: 'For years he’s pushed the message that the economy is “rigged” in favor of Wall Street and the rich. To combat this, Sanders wants to do things like enact a $15/hr minimum wage (although he’s reportedly had issues implementing this even with his campaign staff) and increase tax rates on the wealthy. He also thinks employees should have more ownership stake in the companies they work for. Also, he doesn’t think billionaires “should exist.” He proposes a wealth tax on Americans worth more than $32 million – and wants to use the money to fund his housing plan, universal child care, and to help fund Medicare for All.',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
+                    text: 'For years he’s pushed the message that the economy is “rigged” in favor of Wall Street and the rich. To combat this, Sanders wants to do things like enact a $15/hr minimum wage and increase tax rates on the wealthy. He also thinks employees should have more ownership stake in the companies they work for. Also, he doesn’t think billionaires “should exist.”',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
-                    text: 'He’s telling the other Dems, ‘I see your climate change plans and raise you all of the money.’ At $16.3 trillion, his is the most expensive plan in the game, with other plans ranging between $1 and $10 trillion. Here’s what Sanders says you’d get for it: 100% sustainable electricity and transportation by 2030 and a carbon-neutral economy by 2050. His plan also promises 20 million new jobs plus assistance for farmers and former fossil fuel workers adjusting to a new economy. Sanders says he’d pay for his plan in large part by taxing and suing fossil fuel companies for trillions of dollars. How? Unclear. Would it stop climate change? Probably not. Could it mitigate some of the worst effects? Possibly – especially if other major greenhouse gas emitters pull similar moves. Sanders says averting the worst effects of climate change could save the US tens of trillions of dollars over decades.',
+                    id: "climate", topic: 'CLIMATE CHANGE',
+                    text: 'He’s telling the other Dems, ‘I see your climate change plans and raise you all of the money.’ At $16.3 trillion, his is the most expensive plan in the game. Here’s what Sanders says you’d get for it: 100% sustainable electricity and transportation by 2030 and a carbon-neutral economy by 2050. Sanders says he’d pay for his plan in large part by taxing and suing fossil fuel companies.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'He has a complicated history. In the past, he’s taken positions in line with the NRA. Including voting against legislation to establish a national background check system. Now he’s turned it around and says he wants to expand background checks and ban assault weapons',
                 },
             ],
@@ -301,23 +301,23 @@ export default new Vuex.Store({
             description:'Thanks to the hedge fund that he launched back in 1986, his net worth is reportedly $1.6 billion. He’s been a Democratic Party donor for years. One thing he’s super passionate about: impeaching President Trump.',
             opinions: [
                 {
-                    topic: 'ABORTION',
+                    id: "abortion", topic: 'ABORTION',
                     text: 'He wants to protect a woman’s right to choose.',
                 },
                 {
-                    topic: 'IMMIGRATION',
+                    id: "immigration", topic: 'IMMIGRATION',
                     text: 'Last year, Steyer reportedly promised to invest $1 million to legal aid groups that have helped immigrants facing deportation. He believes they deserve “expanded and strengthened” legal services while DC figures out how to handle the influx of migrants at the border.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He thinks there should be a public option but doesn’t want to completely do away with private health insurance. He’s also criticized pharma companies for allegedly helping fuel the opioid crisis, and has supported a bill in California that would force drug makers to notify customers when drug prices increase.',
                 },
                 {
-                    topic: 'ECONOMY',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
                     text: 'He’s in favor of raising the minimum wage, saying that a living wage is one of the “5 Rights” all Americans should have – along with the right to an equal vote, clean air and water, health, and to learn.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'He started NextGen America – a political action committee and advocacy group focused on fighting climate change. So you know he’s got big plans for this issue if he becomes president. And it would all start on day one, when he’d declare climate change a national emergency. Some of his main ideas to tackle climate change: implement a Civilian Climate Corps (think: an environmental version of the Peace Corps), and force companies to disclose their investments in fossil fuels.',
                 },
             ],
@@ -336,31 +336,31 @@ export default new Vuex.Store({
             description:'Senator since 2013, former Harvard law professor who laid the groundwork for what became the Consumer Financial Protection Bureau. She has a reputation for putting a lot of pressure on the financial industry for the way it does business. ',
             opinions: [
                 {
-                    topic: 'ABORTION',
-                    text: 'She supports abortion rights. And wants Congress to pass federal laws that protect women’s access to reproductive care (like birth control and abortions).',
+                    id: "abortion", topic: 'ABORTION',
+                    text: 'She supports abortion rights, and says "Congress should act to ensure that the will of the people remains the law of the land.". And wants Congress to pass federal laws that protect women’s access to reproductive care (like birth control and abortions).',
                 },
                 {
-                    topic: 'EDUCATION',
-                    text: 'She wants free (read: taxpayer-funded) public college for everyone. She’s pitching the cancellation of up to $50,000 in student loan debt for American families who make less than $100,000 a year. She wants universal child care from birth to school age – free to families that make less than 200% of the federal poverty line and what she describes as affordable for everyone else. (She has a handy calculator for you to figure out how much it would cost you.)',
+                    id: "education", topic: 'EDUCATION',
+                    text: 'She wants free (read: taxpayer-funded) public college for everyone. She’s pitching the cancellation of up to $50,000 in student loan debt for American families who make less than $100,000 a year. She wants universal child care from birth to school age – free to families that make less than 200% of the federal poverty line and what she describes as affordable for everyone else.',
                 },
                 {
-                    topic: 'IMMIGRATION',
+                    id: "immigration", topic: 'IMMIGRATION',
                     text: 'She also has a plan for that. It includes getting rid of criminal penalties for illegal border crossings, instead making it a civil offense; banning for-profit detention centers; raising the refugee cap (which the Trump admin lowered) to 125,000 refugees in her first year in office; and establishing a Justice Dept task force to investigate alleged mistreatment of migrants by the Trump admin.',
                 },
                 {
-                    topic: 'HEALTH CARE',
-                    text: 'Within her first 100 days in office, she’ll offer a public health insurance option. It would be free for children and lower-income families. People outside those categories can pay to opt in. Eventually, she would phase out private insurance and make national health insurance free for everyone. The phrase you’ll be hearing her say over and over again? ‘Not one penny.’ That’s how little the middle class will be taxed for her healthcare plan. To fund her $20.5 trillion idea, she’s calling for employer contributions and a tax increase on wealthy Americans. Warren also plans to reduce drug costs, undo Trump admin’s policies (like ending the Medicaid work requirements) and address the maternal mortality crisis.',
+                    id: "health", topic: 'HEALTH CARE',
+                    text: 'Within her first 100 days in office, she’ll offer a public health insurance option. It would be free for children and lower-income families. Eventually, she would phase out private insurance and make national health insurance free for everyone. The phrase you’ll be hearing her say over and over again? ‘Not one penny.’ That’s how little the middle class will be taxed for her healthcare plan.',
                 },
                 {
-                    topic: 'ECONOMY',
-                    text: 'She wants to invest in housing to bring down rents by 10% while also creating 1.5 million new jobs and start closing the racial wealth gap. Ambitious. She also has what she calls her ultra-millionaire tax: it will target the richest 0.1% of Americans to raise nearly $3 trillion that can be used to “rebuild the middle class.” She’s also proposing to break up Google, Facebook and Amazon, and to ban companies with over $25 billion in revenue “to act as operators and users of a platform.” She also wants to have regulators review already-closed mergers – like the Bayer-Monsanto merger. Oh, and she wants to give workers a boost by doing things like expanding the right to unionize and upping the federal minimum wage to $15 an hour.',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
+                    text: 'She wants to invest in housing to bring down rents by 10% while also creating 1.5 million new jobs and start closing the racial wealth gap. Ambitious. She also has what she calls her ultra-millionaire tax: it will target the richest 0.1% of Americans to raise nearly $3 trillion that can be used to “rebuild the middle class.” She’s also proposing to break up Google, Facebook and Amazon.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
-                    text: 'She’s embraced a climate change plan to eliminate greenhouse emissions from power plants, cars, and buildings over 10 years. The plan would cost $3 trillion, and Warren says it would be fully paid for by reversing tax cuts passed in 2017. Warren also endorses the Green New Deal. Part of her plan includes investing $2 trillion in research and manufacturing of clean energy technology to fight climate change while boosting the economy and creating jobs.',
+                    id: "climate", topic: 'CLIMATE CHANGE',
+                    text: 'She’s embraced a climate change plan to eliminate greenhouse emissions from power plants, cars, and buildings over 10 years. The plan would cost $3 trillion, and Warren says it would be fully paid for by reversing tax cuts passed in 2017. Part of her plan includes investing $2 trillion in research and manufacturing of clean energy technology to fight climate change.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'She has a plan that she hopes will reduce gun deaths by 80%. That includes requiring background checks at gun shows, banning assault weapons, and establishing a one-week waiting period for all gun purchases. She also wants to investigate the NRA for corruption. And has joined other lawmakers in calling for a redo of a federal investigation into the danger guns pose for children and schools.',
                 },
             ],
@@ -376,23 +376,23 @@ export default new Vuex.Store({
             description:'Andrew Yang is running for president because he’s afraid for the future of the country, saying new tech has “destroyed more than 4 million US jobs.” He’s a former tech executive and author. He worked briefly as a corporate lawyer and later started the nonprofit Venture for America.',
             opinions: [
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'He supports universal pre-K and wants to forgive student loan debt. He wants free (or nearly-free) community college and measures that’ll push colleges to lower tuition. He also wants to promote life-skills education (think: financial literacy and time management) in high school.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He supports Medicare for All and wants to begin a national anti-stigma campaign for mental health issues called “Everybody Needs Help Sometimes.” He also wants to encourage health care systems to make mental health part of primary care. He supports a woman’s right to an abortion in all instances and plans to appoint judges who support that.',
                 },
                 {
-                    topic: 'ECONOMY',
-                    text: 'Repeat after Yang: Universal. Basic. Income. This is his signature policy. His goal is to give $1,000 a month to every American adult. No conditions. He’d fund this by consolidating some welfare programs and implementing a 10% value-added tax (a tax on the production of goods as they goes through the supply chain). Why? To fight the fact that technology is displacing a lot of workers, and help millions of Americans living below the poverty line. He’s rebranded the concept as the Freedom Dividend, a phrase he says tests better with conservatives. Because, politics.',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
+                    text: 'Repeat after Yang: Universal. Basic. Income. This is his signature policy. His goal is to give $1,000 a month to every American adult. No conditions. He’d fund this by consolidating some welfare programs and implementing a 10% value-added tax (a tax on the production of goods as they goes through the supply chain).',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'He supports the Green New Deal and wants to invest in tech designed to fix the damage already done to the environment. For example: placing mirrors in space to reflect the sun’s radiation away from Earth. He also wants to end current tax benefits for fossil fuel companies.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'He wants a tiered licensing system that would have increasingly stricter requirements in order to own and operate different types of firearms. All gun owners would have to pass a federal background check. And anyone with a history of violence, domestic abuse, or violent mental illness wouldn’t be able to get a license. He would implement a federal buyback program for anyone who wants to give up their firearms.',
                 },
             ],
@@ -411,23 +411,23 @@ export default new Vuex.Store({
             description: 'He’s been trying to Keep America Great since 2017. Before getting into politics, he was chairman and president of the Trump Organization starting in 1971, and became a real estate mogul (see: his Trump Towers around the world).',
             opinions: [
                 {
-                    topic: 'ABORTION',
+                    id: "abortion", topic: 'ABORTION',
                     text: 'He’s against abortions except in three instances: rape, incest, and if the mother’s life is at risk. And his administration implemented rules that would make it easier for healthcare workers to refuse to perform abortions and other services if they violate their religious or moral beliefs.',
                 },
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'He’s in favor of school vouchers, which give students public funds to go to non-public schools (think: private or charter). He also wants to fix the student loan crisis by doing two things. One: capping the amount of student loan debt students and parents can take on. Two: reducing the number of repayment plans available to them.',
                 },
                 {
-                    topic: 'IMMIGRATION',
+                    id: "immigration", topic: 'IMMIGRATION',
                     text: 'He still hasn’t gotten his wall, but he’s still trying to get more funding for border security, which would go to things like aid for unaccompanied minors. He’s also tried to end asylum protections for most migrants who arrive at the US-Mexico border.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He’s planning to roll out big plans for it soon. For now, he’s promising to protect people with pre-existing conditions. He’s also proposed lowering funding for Medicaid and Medicare. And don’t ask him how he feels about the Affordable Care Act.',
                 },
                 {
-                    topic: 'ECONOMY',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
                     text: 'One thing he’s especially proud of is the Republican tax plan, which was the biggest tax rewrite in decades. And during his first term, the unemployment rate has dropped to a 50-year low. He’s also made moves that he says will help keep US jobs at home (see: steel and aluminum tariffs, ditching the Trans-Pacific Partnership). Expect this to be another big talking point on the campaign trail.',
                 },
             ],
@@ -443,27 +443,27 @@ export default new Vuex.Store({
             description:'Conservative talk show radio host and former Republican congressman from Illinois, who ran as a candidate of the Republican Party’s fiscally conservative Tea Party movement in 2010. He only served one term because he lost his 2012 re-election bid.',
             opinions: [
                 {
-                    topic: 'EDUCATION',
+                    id: "education", topic: 'EDUCATION',
                     text: 'One thing you can be sure of: he isn’t in favor of free college for all.',
                 },
                 {
-                    topic: 'IMMIGRATION',
-                    text: 'Like Trump, Walsh wants to crack down on illegal border crossings. And tweeted that he’s in favor of building a US-Mexico border wall. He has also described undocumented immigrants as criminals. Unlike the Trump admin, he said he wouldn’t have separated families who crossed the border illegally in order to prosecute all adults. He says he would devote more resources to processing asylum claims, which he says the US has a “responsibility to hear.”',
+                    id: "immigration", topic: 'IMMIGRATION',
+                    text: 'Like Trump, Walsh wants to crack down on illegal border crossings. And tweeted that he’s in favor of building a US-Mexico border wall. He has also described undocumented immigrants as criminals. Unlike the Trump admin, he said he wouldn’t have separated families who crossed the border illegally in order to prosecute all adults.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He has made it clear that he’s against government-run health care. And rejected claims from the left that health care is a human right.',
                 },
                 {
-                    topic: 'ECONOMY',
-                    text: 'Walsh rode the Tea Party wave when he got elected to Congress in 2010, railing against Obama and what he saw as executive overreach. He says he wants to address Trump’s “reckless” fiscal policies, high taxes, and the country’s increasing debt and deficit. He has issued warning bells about the deficit growing $100 billion a year under the Trump admin. And claims that Trump is “tweeting this country into recession.” He has also called Trump’s trade war with China “narcissistic” but has not said how he would handle trade differently.',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
+                    text: 'Walsh rode the Tea Party wave when he got elected to Congress in 2010, railing against Obama and what he saw as executive overreach. He says he wants to address Trump’s “reckless” fiscal policies, high taxes, and the country’s increasing debt and deficit.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
-                    text: 'Walsh has downplayed the threats from climate change. In 2015, he tweeted “lol climate change...or global warming...or whatever they\'re calling it now.” He’s also rejected claims that climate change constitutes a national emergency and praised a rollback of climate change research funding. Since announcing his presidential bid, he gave an interview saying the Republican Party needs to do more to confront climate change.',
+                    id: "climate", topic: 'CLIMATE CHANGE',
+                    text: 'In 2015, he tweeted “lol climate change...or global warming...or whatever they\'re calling it now.” He’s also rejected claims that climate change constitutes a national emergency and praised a rollback of climate change research funding. Since announcing his presidential bid, he gave an interview saying the Republican Party needs to do more to confront climate change.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'He’s all for gun rights. In 2018, he tweeted that he has “a right to use an AR-15” to defend his family and home.',
                 },
             ],
@@ -482,31 +482,31 @@ export default new Vuex.Store({
             description:'Massachusetts governor from 1991 to 1997, 2016 Libertarian VP nominee alongside former New Mexico Governor Gary Johnson for president. He’s pitching himself as the anti-Trump Republican.',
             opinions: [
                 {
-                    topic: 'ABORTION',
+                    id: "abortion", topic: 'ABORTION',
                     text: 'He’s pro-choice and wants to expand legal access to abortion. As governor in the ‘90s, he intro’d a bill to make abortion more accessible in Massachusetts.',
                 },
                 {
-                    topic: 'EDUCATION',
-                    text: 'As governor in the ‘90s, he signed legislation to improve school standards. He’s also cited a Stanford study to point to the success of his charter school programs there. As president, he’d eliminate the Education Department as part of his goal to reduce government size. And reportedly replace it with more local oversight. He wants to make community college tuition-free for people who lose their jobs to things like automation. And to allow students to refinance their college loans.',
+                    id: "education", topic: 'EDUCATION',
+                    text: 'As governor in the ‘90s, he signed legislation to improve school standards. As president, he’d eliminate the Education Department as part of his goal to reduce government size. And replace it with more local oversight. He wants to make community college tuition-free for people who lose their jobs to things like automation. And to allow students to refinance their college loans.',
                 },
                 {
-                    topic: 'IMMIGRATION',
+                    id: "immigration", topic: 'IMMIGRATION',
                     text: 'He’s compared Trump\'s proposals for mass deportations of undocumented immigrants to the practices of Nazi Germany. He supports some form of legal status for undocumented immigrants.',
                 },
                 {
-                    topic: 'HEALTH CARE',
+                    id: "health", topic: 'HEALTH CARE',
                     text: 'He’s all about whatever makes health care both cheaper, more accessible, and higher quality. He has said that there’s “too much government” involved in the Affordable Care Act. But he supports expanding Medicaid access and wants people to be able to buy health insurance across state lines to help bring costs down.',
                 },
                 {
-                    topic: 'ECONOMY',
-                    text: 'he opposes Trump’s tariffs, wants to cut the deficit, and to cut taxes. Budgets are his love language. He was named the most fiscally conservative governor in the country at the time and if elected, he says he’ll prioritize cutting government spending. When Weld stopped by Skimm HQ, we asked him for his best budgeting tip. Answer? Always balance your checkbook. Yes, he still uses a checkbook.',
+                    id: "economy", id: "economy", topic: 'ECONOMY',
+                    text: 'he opposes Trump’s tariffs, wants to cut the deficit, and to cut taxes. He was named the most fiscally conservative governor in the country at the time and if elected, he says he’ll prioritize cutting government spending. When Weld stopped by Skimm HQ, we asked him for his best budgeting tip. Answer? Always balance your checkbook. Yes, he still uses a checkbook.',
                 },
                 {
-                    topic: 'CLIMATE CHANGE',
+                    id: "climate", topic: 'CLIMATE CHANGE',
                     text: 'He sees it as a major issue and supports rejoining the Paris climate deal.',
                 },
                 {
-                    topic: 'GUNS',
+                    id: "guns", topic: 'GUNS',
                     text: 'he’s apparently not a fan of President Trump’s idea to arm teachers with guns. He thinks legally-acquired rifles in the hands of private citizens are "a bulwark against government oppression." But he thinks there should be red flag laws to keep guns out of the hands of people with mental illness. He also want waiting periods when it comes to gun purchases, and to ban handgun sales to people under 21.',
                 },
             ],
