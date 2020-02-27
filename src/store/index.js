@@ -902,7 +902,7 @@ export default new Vuex.Store({
                 },
                 {
                     name: 'Elizabeth Warren',
-                    text: 'She wants to overhaul the ICE and decriminalize illegal border crossings, focus deportations on criminals and national security threats'
+                    text: 'She wants to overhaul the ICE and decriminalize illegal border crossings, focusing deportations on criminals and national security threats.'
                 },
                 {
                     name: 'Bill Weld',
