@@ -14,8 +14,6 @@
             <h3>WHO DO YOU AGREE WITH?</h3> -->
             <div class="top_div">
                 <div class="information">
-                    <p class="title"><span style="color: #BF0A30;">VOTE</span><span style="color: #002868;">SMART</span></p>
-
                     <h2 class="tagline">Make an informed decision in the 2020 presidential election. Even with your busy schedule.</h2>
 
                     <div>
@@ -93,6 +91,7 @@ export default {
     position: absolute;
     top: 23%;
     margin-left: 5%;
+    margin-top: 32px;
 }
 .main_picture {
     display: inline;
@@ -100,14 +99,6 @@ export default {
     height: 100%;
     align: center;
     border-radius: 4px;
-    
-}
-.title {
-    text-align: left;
-    margin-bottom: -20px;
-    margin-top: 0px;
-    font-size: 64px;
-    font-weight: 900;
     
 }
 .tagline {

@@ -4,12 +4,12 @@
         <div v-for="(candidate, index) in this.cands" :key='index'>
             <div class="flex-container" :class="{tint: index %2 === 0}">
                 <div class=picture-container>
-                    <img class="winner-img-container" :src="candidate.photo"/>
+                    <img class="winner-img-container" :class='{repImage: candidate.party === "Republican", demImage: candidate.party === "Democrat"}' :src="candidate.photo"/>
                     <h2>{{ candidate.name }}</h2>
                 </div>
                 <div class="info-flex-container">
                     <div style="font-size: 48px; color: black;">{{ candidate.score / 8 * 100 }}%</div>
-                    <div style="font-size: 24px; color: black; margin: 16px 0 24px 0;">{{ candidate.party }}</div>
+                    <div style="font-size: 24px; margin: 16px 0 24px 0; font-weight: 700;" :class='{republican: candidate.party === "Republican", democrat: candidate.party === "Democrat"}'>{{ candidate.party }}</div>
                     <div v-on:click="goToPage(candidate.name)" target="_blank" class="go-to-page-button">VISIT PAGE</div>
                 </div>
             </div>
@@ -105,5 +105,17 @@ export default {
     }
     .go-to-page-button:hover {
         cursor: pointer;
+    }
+    .democrat {
+        color: #002868;
+    }
+    .republican {
+        color: #BF0A30;
+    }
+    .repImage {
+        border: 8px solid #BF0A30;;
+    }
+    .demImage {
+        border: 8px solid #002868;
     }
 </style>
