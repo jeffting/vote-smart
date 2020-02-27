@@ -787,27 +787,56 @@ export default new Vuex.Store({
                 {
                     text: "Info taken from theskimm.com.",
                 },
-            ],
-            opinions: [
                 {
-                    name: '',
-                    text: ''
+                    text: "It’s been 25 years since Congress passed comprehensive gun control legislation. And in 2017, gun deaths reached the highest they’ve been in decades.",
                 },
-            ]
-        },
-        {
-            id: "health",
-            name: "Health Care",
-            picture: require("../assets/health.jpg"),
-            info: [
                 {
-                    text: "Info taken from theskimm.com.",
+                    text: "Voters in both parties agree on some key proposals: most Americans say gun laws should be stricter; a majority of both GOP and Dem voters are in favor of restricting gun sales to people with mental illnesses; and a majority in both parties favor background checks for private gun sales, and at gun shows.",
+                },
+                {
+                    text: "Here’s where the parties and candidates start to differ. The Democratic candidates all agree on banning assault-style weapons and high-capacity magazines – which can be defined as capable of holding more than 10 rounds. They disagree on things like mandatory buyback programs and gun registries.",
                 },
             ],
             opinions: [
                 {
-                    name: '',
-                    text: ''
+                    name: 'Joe Biden',
+                    text: 'He supports reinstating assault weapons ban and wants a voluntary buyback program to get weapons off the streets and to impose universal background checks.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He is a longtime advocate for gun control. He supports universal background checks, assault weapons ban. He is the primary funder of Everytown for Gun Safety, an advocacy group working to end gun violence.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He supports universal background checks and wants to make it harder for domestic abusers to get a firearm.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She supports universal background checks and wants to ban assault weapons.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She supports universal background checks and wants to ban assault weapons. She wants to ensure gun control measures still allow Americans to engage in regular hunting.'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'In the past he has taken positions in line with the NRA and voted against legislation to est. a national background check system. Now he says he wants to expand background checks and ban assault weapons.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'Calls gun violence a "public health crisis". He supports universal background checks and wants to ban assault weapons and high capacity magazines. He also wants to close gun loopholes, like the "boyfriend loophole," which allows some convicted abusers to buy guns.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'He wants to get states to adopt red flag laws, aka courts can more easily take away guns from potentially dangerous people. He has advocated arming teachers with guns to control school shootings.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She aims to reduce gun deaths by 80%, with plans like: requiring background checks at gun shows, banning assault weapons, and establishing waiting period for gun purchases.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'Sees gun ownership as "a bulwark against government oppression" and supports red flag laws. He wants waiting periods for gun purchases and to raise the age to buy guns from 18 to 21.'
                 },
             ]
         },
@@ -819,11 +848,138 @@ export default new Vuex.Store({
                 {
                     text: "Info taken from theskimm.com.",
                 },
+                {
+                    text: "Trump has made curbing illegal immigration a top priority. See: demands to extend the US-Mexico border wall, attempts to end DACA (the Obama-era program that protects immigrants, known as Dreamers, brought here illegally as kids from deportation), and the “zero tolerance” policy that led to thousands of families being separated at the border.",
+                },
+                {
+                    text: "Those who support the admin’s moves say the US needs to keep the country safe.",
+                },
+                {
+                    text: "Critics argue that it’s the US’s moral responsibility to accept immigrants and refugees who come here for a better life, and that immigrants help boost the economy.",
+                },
+                {
+                    text: "ome Democratic candidates have called for reforming Immigration and Customs Enforcement (ICE) – the agency that oversees deportations – because they believe it has too much power. Their solutions range from reducing its responsibilities to completely getting rid of it.",
+                },
+                {
+                    text: "The Trump admin has also tried to overhaul legal immigration. It’s announced policies that favor merit-based immigration (think: giving priority to highly skilled immigrants or those who speak English) over family-based immigration.",
+                },
+                {
+                    text: "And this year, Trump added more countries to his controversial travel ban over national security concerns. The initial ban blocked people traveling from some Muslim-majority countries.",
+                },
             ],
             opinions: [
                 {
-                    name: '',
-                    text: ''
+                    name: 'Joe Biden',
+                    text: 'He acknowledges "pain" caused by 3 million deportations while VP and is therefore against decriminalizing illegal border crossings. He supports DACA and a path to citizenship for undocumented immigrants and has a plan to Restructure Immigration and Customs Enforcement (ICE).'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He believes immigrants play an important role in the economy by filling jobs. He founded pro-immigration advocacy group and supports a path to citizenship for undocumented immigrants.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He supports decriminalizing some illegal border crossings, would focus deportations on criminals and national security threats and creating a path to citizenship for undocumented immigrants. He would restructure the ICE and invest in US-Mexico border security tech.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She supports a path to citizenship for undocumented immigrants.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She is against decriminalizing illegal border crossings. She supports added border security but not the Trump admin\'s proposal to build a wall across the entire southern border and a path to citizenship for undocumented immigrants.'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'He wants to decriminalize illegal border crossings, abolish the ICE, and pause all deportations.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'He wants to decriminalize illegal border crossings. He supports the DACA and creating a path to citizenship for undocumented immigrants.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'He has pledged to extend the US-Mexico border wall, started and ended "zero tolerance policy", and wants to end DACA. He has also Suspended immigration from seven countries, including six majority-Muslim countries and capped number of refugees admitted to the US per year. He has proposed ending birthright citizenship, focus on merit-based immigration.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She wants to overhaul the ICE and decriminalize illegal border crossings, focus deportations on criminals and national security threats'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He has compared Trump\'s proposals for mass deportations of undocumented immigrants to Nazi Germany. He supports some form of legal status for undocumented immigrants.'
+                },
+            ]
+        },
+        {
+            id: "health",
+            name: "Health Care",
+            picture: require("../assets/health.jpg"),
+            info: [
+                {
+                    text: "Info taken from theskimm.com.",
+                },
+                {
+                    text: "US health care is the most expensive in the world. So expensive that a health emergency can put a family into bankruptcy.",
+                },
+                {
+                    text: "Some Americans are covered by Medicaid or Medicare, two gov programs that help cover older, lower-income, and disabled Americans. Since 2014, Obamacare has let states expand who can be covered under Medicaid and worked to make it easier for people to buy insurance outside of employer-provided plans.",
+                },
+                {
+                    text: "Still, 8.5% of Americans (27.5 million people) are uninsured. And even those who are insured can face significant health care costs because of things like high deductibles or copays.",
+                },
+                {
+                    text: "All of this means making health care more affordable and accessible is one of the most fiercely debated topics in politics. And a no. 1 issue for some voters.",
+                },
+                {
+                    text: "Many on both sides of the aisle – including President Trump – want to focus on lowering specific health care costs (like drug prices) rather than just the insurance part.",
+                },
+                {
+                    text: "Some Democratic presidential candidates are proposing Medicare for All – abolishing private insurance and getting everyone in the US on a government-run plan. The move means everyone gets the same insurance, regardless of income.",
+                },
+                {
+                    text: "But other Dems don’t see the benefit of taking a pen to the entire US health care system.",
+                },
+            ],
+            opinions: [
+                {
+                    name: 'Joe Biden',
+                    text: 'He would expand Obamacare by offering a public health insurance option without scrapping private insurance. He also would let Medicare directly negotiate drug prices and get prescription drugs from other countries to increase competition and lower pricing.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He would scrap Medicare for All, says it would “bankrupt us for a very long time”. As mayor, made NYC first city to require calorie counts on menus for chain restaurants.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He would enact Medicare for All Who Want It...exactly what it sounds like.'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She is pro Medicare for All.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She would move toward universal health care that allows people to opt into government-run plans. She plans to Expand Medicare to include anyone that’s 55 and older (as opposed to 65 and up).'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'Medicare for All is his baby. He also wants to get rid of private insurance.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'He wants a public option, but wouldn\'t scrap private insurance.'
+                },
+                {
+                    name: 'Donald Trump',
+                    text: 'He supports lower prescription drug costs, health care costs. He is against Medicare for All and is Anti-Obamacare; got rid of the individual mandate (which required most people to pay a fine if they didn\'t have health insurance), trying to scrap the full law.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'She has her own $20.5 trillion Medicare for All plan. She says her plan won\'t raise taxes on middle class.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He wants less government intervention in Obamacare. He proposes to expand Medicaid access and allowing people to buy health insurance across state lines to lower costs.'
                 },
             ]
         },
@@ -835,11 +991,59 @@ export default new Vuex.Store({
                 {
                     text: "Info taken from theskimm.com.",
                 },
+                {
+                    text: "There are a wide variety of issues that could affect the safety and security of Americans: everything from the threat of terrorism and nuclear war to gun control and climate change.",
+                },
+                {
+                    text: "President Trump ran on a platform of extending the US-Mexico border wall – and tends to treat illegal immigration as a national security threat.",
+                },
+                {
+                    text: "But both parties agree the US faces threats abroad: like Russia, because of its interference in the 2016 election process and concerns it could interfere in 2020 as well. Iran and China are also believed to pose serious cybersecurity threats to US elections.",
+                },
+                {
+                    text: "Meanwhile, ISIS. Even though it lost territory in Iraq and Syria, the group maintains cells around the world. That includes in Afghanistan, where the US has thousands of troops stationed to help contain terror threats, like ISIS and the Taliban.",
+                },
             ],
             opinions: [
                 {
-                    name: '',
-                    text: ''
+                    name: 'Donald Trump',
+                    text: 'He wants to get the US out of "endless" foreign wars (Afghanistan, Iraq) and instead engage with adversaries: North Korea, Russia, Taliban. He pulled the US out of Iran nuclear deal and from northern Syria. He was impeached by the House on national security grounds over withholding aid to Ukraine.'
+                },
+                {
+                    name: 'Bill Weld',
+                    text: 'He Supports removing Trump from office over withholding aid to Ukraine. His No. 1 concern is nuclear weapons (criticized Trump for pulling out of the Iran nuclear deal, doesn\'t think US should take North Korea at its word).'
+                },
+                {
+                    name: 'Joe Biden',
+                    text: 'He supports the Iran nuclear deal and sanctions against Russia as a response to things like annexation of Crimea.'
+                },
+                {
+                    name: 'Michael Bloomberg',
+                    text: 'He supports sanctions against Russia as a response to things like annexation of Crimea.'
+                },
+                {
+                    name: 'Pete Buttigieg',
+                    text: 'He wouldn\'t exchange "love letters" with North Korea\'s leader but would try to help North Korea become part of the international community. He also supports pulling troops from Afghanistan, where he served'
+                },
+                {
+                    name: 'Tulsi Gabbard',
+                    text: 'She rejects forms of US military intervention abroad, such as regime change. She Voted for Iran nuclear deal – didn\'t think it was perfect but better than alternatives, says she\d re-enter the deal.'
+                },
+                {
+                    name: 'Amy Klobuchar',
+                    text: 'She would focus on terrorism, keep a smaller US military presence in Afghanistan, Iraq to avoid these countries being used as base by terror groups. She voted for Iran nuclear deal and supports the US rejoining the deal.'
+                },
+                {
+                    name: 'Bernie Sanders',
+                    text: 'He says the greatest threat to national security is climate change. He wants to end support for war in Yemen, end US efforts at regime change (eg: in Venezuela). He would withdraw from Afghanistan and rejoin the Iran nuclear deal.'
+                },
+                {
+                    name: 'Tom Steyer',
+                    text: 'He calls Trump a national security risk; cites the fact that he was impeached in part over his conversation with Ukraine\'s president, which Dems said endangered national security. He would require paper ballots to protect election security.'
+                },
+                {
+                    name: 'Elizabeth Warren',
+                    text: 'Her focus is on terrorism, but would bring US troops home and reduce defense spending. She voted for Iran nuclear deal, and would rejoin.'
                 },
             ]
         },
