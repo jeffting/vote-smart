@@ -2,19 +2,25 @@
     <div class="quiz-div" style="margin-bottom: 64px">
         <h1>Quiz</h1>
         <div class="question-div" v-for="(item, index) in quizItems" :key=index style="margin-bottom: 80px;">
-            <div>
-                <img class="issue-img-container" :src=item.picture>
-            </div>
-            <h3 class="issue-title">{{index+1}}. {{ item.issue }}</h3>
-            <p class="quiz-info">{{ item.info }}</p>
-            <p class="learn-more">
-                <router-link :to="item.link" target="_blank">LEARN MORE</router-link>
-            </p>
-            <div class="questionbox-div">
-                <p class="question"> {{ item.question }}</p>
-                <div class="answer-box" v-for="(ans, aIndex) in item.answers" :key=aIndex>
-                    <div v-if="aIndex !== item.answerSelected" v-on:click="setAnswer(index, aIndex)" class="answer-span">{{ ans.answer }}</div>
-                    <div v-else class="answer-span answer-span-selected">{{ ans.answer }}</div>
+            <div class="row-flex-quiz">
+                <div class="flex-item-left">
+                    <div>
+                        <img class="issue-img-container" :src=item.picture>
+                    </div>
+                    <h3 class="issue-title">{{index+1}}. {{ item.issue }}</h3>
+                    <p class="quiz-info">{{ item.info }}</p>
+                    <p class="learn-more">
+                        <router-link :to="item.link" target="_blank">LEARN MORE</router-link>
+                    </p>
+                </div>
+                <div class="flex-item-right">
+                    <div class="questionbox-div">
+                        <p class="question"> {{ item.question }}</p>
+                        <div class="answer-box" v-for="(ans, aIndex) in item.answers" :key=aIndex>
+                            <div v-if="aIndex !== item.answerSelected" v-on:click="setAnswer(index, aIndex)" class="answer-span">{{ ans.answer }}</div>
+                            <div v-else class="answer-span answer-span-selected">{{ ans.answer }}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,6 +94,23 @@ export default {
 }
 </script>
 <style>
+.flex-item-left {
+    width: 35vw;
+}
+.flex-item-right {
+    margin-left: 24px;
+    width: 65vw;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+
+}
+.row-flex-quiz {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15% 0 15%;
+    align-items: stretch;
+}
 .quiz-div {
     text-align: center;
 }
@@ -102,19 +125,19 @@ export default {
     font-size: 20px;
     /* margin: 0 20% 0 20%; */
     /* display: inline-block; */
-    width: 100%;
+    /* width: 100%; */
 }
 .issue-title {
     margin-bottom: -5px;
 }
 .question-div{ 
-    width: 80%;
+    /* width: 80%; */
     display: inline-block;
     text-align: center;
 }
 .quiz-info {
     /* margin: 0 15% 0 15%; */
-    width: 100%;
+    /* width: 100%; */
     text-align: left;
     font-size: 20px;
     display: inline-block;
@@ -123,7 +146,7 @@ export default {
     margin: 8px 8px 8px -8px;
     border: solid #666666;
     border-width: 1px;
-    width: 100%;
+    /* width: 100%; */
     padding: 8px;
     border-radius: 4px;
 }
@@ -146,8 +169,6 @@ export default {
 }
 .quiz-button:hover {
     cursor: pointer;
-    background-color: #f4f4f4;
-    color:  #222222;
 }
 .question {
     font-size: 20px; 
@@ -159,8 +180,8 @@ export default {
 .questionbox-div {
     background-color: #f4f4f4;
     border-radius: 4px;
-    padding: 0px 16px 16px 16px;
-    width: 80%;
+    padding: 0px 16px 16px 24px;
+    /* width: 80%; */
     display: inline-block;
 
 
