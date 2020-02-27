@@ -41,6 +41,9 @@ export default {
       name: this.$route.params.name,
     }
   },
+  beforeCreate() {
+      this.$store.dispatch('setPage', 'candidates');
+  },
   methods: {
         routeToIssue(issue) {
             this.$router.push({name: 'Issue', params: {issue: issue.toLowerCase()}})
