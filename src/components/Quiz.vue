@@ -1,20 +1,25 @@
 <template>
-    <div>
+    <div class="quiz-div" style="margin-bottom: 64px">
         <h1>Quiz</h1>
-        <div v-for="(item, index) in quizItems" :key=index style="margin-bottom: 80px;">
+        <div class="question-div" v-for="(item, index) in quizItems" :key=index style="margin-bottom: 80px;">
             <div>
                 <img class="issue-img-container" :src=item.picture>
             </div>
-            <h3>{{index+1}}. {{ item.issue }}</h3>
+            <h3 class="issue-title">{{index+1}}. {{ item.issue }}</h3>
             <p class="quiz-info">{{ item.info }}</p>
-            <p style="text-align: left; margin: 8px 15% 0 15%;"><router-link :to="item.link" target="_blank">Learn More</router-link></p>
-            <p style="font-size: 20px; color: black;"> {{ item.question }}</p>
-            <div class="answer-box" v-for="(ans, aIndex) in item.answers" :key=aIndex>
-                <div v-if="aIndex !== item.answerSelected" v-on:click="setAnswer(index, aIndex)" class="answer-span">{{ ans.answer }}</div>
-                <div v-else class="answer-span answer-span-selected">{{ ans.answer }}</div>
+            <p class="learn-more">
+                <router-link :to="item.link" target="_blank">LEARN MORE</router-link>
+            </p>
+            <div class="questionbox-div">
+                <p class="question"> {{ item.question }}</p>
+                <div class="answer-box" v-for="(ans, aIndex) in item.answers" :key=aIndex>
+                    <div v-if="aIndex !== item.answerSelected" v-on:click="setAnswer(index, aIndex)" class="answer-span">{{ ans.answer }}</div>
+                    <div v-else class="answer-span answer-span-selected">{{ ans.answer }}</div>
+                </div>
             </div>
         </div>
         <div v-if="showError" style="color: red; font-size: 20px; margin-bottom: 16px;">{{ this.errorMessage}}</div>
+        <br>
         <button v-on:click="seeResults" class="quiz-button">See Results</button>
     </div>
 </template>
@@ -83,26 +88,45 @@ export default {
 }
 </script>
 <style>
+.quiz-div {
+    text-align: center;
+}
+.learn-more {
+    text-align: left; 
+    /* margin: 8px 15% 0 15%; */
+    margin-top: -5px;
+}
+
 .answer-box {
     text-align: left;
     font-size: 20px;
-    margin: 0 20% 0 20%;
+    /* margin: 0 20% 0 20%; */
+    /* display: inline-block; */
+    width: 100%;
 }
-
+.issue-title {
+    margin-bottom: -5px;
+}
+.question-div{ 
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+}
 .quiz-info {
-    margin: 0 15% 0 15%;
+    /* margin: 0 15% 0 15%; */
+    width: 100%;
     text-align: left;
     font-size: 20px;
+    display: inline-block;
 }
 .answer-span {
-    margin: 8px 0 8px 16px;
-    border: solid #222222;
+    margin: 8px 8px 8px -8px;
+    border: solid #666666;
     border-width: 1px;
     width: 100%;
     padding: 8px;
     border-radius: 4px;
 }
-
 .answer-span:hover {
     cursor: pointer;
     background-color: #222222;
@@ -122,5 +146,23 @@ export default {
 }
 .quiz-button:hover {
     cursor: pointer;
+    background-color: #f4f4f4;
+    color:  #222222;
+}
+.question {
+    font-size: 20px; 
+    color: #222222;
+    font-weight: 600;
+    /* text-align: left; */
+    /* text-transform: uppercase; */
+}
+.questionbox-div {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    padding: 0px 16px 16px 16px;
+    width: 80%;
+    display: inline-block;
+
+
 }
 </style>
