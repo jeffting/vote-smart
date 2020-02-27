@@ -1,5 +1,5 @@
 <template>
-    <div style="margin-bottom: 64px;">
+    <div>
         <h1>YOU RELATE MOST WITH</h1>
         <div v-for="(candidate, index) in this.cands" :key='index'>
             <div class="flex-container" :class="{tint: index %2 === 0}">
@@ -72,7 +72,7 @@ export default {
         justify-content: space-evenly;
         margin: 0 15% 0 15%;
         align-items: center;
-        padding-top: 24px;
+        padding-top: 32px;
     }
     .picture-container {
         display: flex;

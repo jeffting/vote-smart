@@ -1,5 +1,5 @@
 <template>
-    <div style="margin-bottom: 64px">
+    <div>
         <h1>Quiz</h1>
         <div v-for="(item, index) in quizItems" :key=index style="margin-bottom: 80px;">
             <div>

@@ -14,7 +14,7 @@
             <h3>WHO DO YOU AGREE WITH?</h3> -->
             <div class="top_div">
                 <div class="information">
-                    <p class="title">VOTESMART</p>
+                    <p class="title"><span style="color: #BF0A30;">VOTE</span><span style="color: #002868;">SMART</span></p>
 
                     <h2 class="tagline">Make an informed decision in the 2020 presidential election. Even with your busy schedule.</h2>
 
@@ -99,12 +99,16 @@ export default {
     width: 100%;
     height: 100%;
     align: center;
+    border-radius: 4px;
     
 }
 .title {
     text-align: left;
     margin-bottom: -20px;
-    color:  #222222;
+    margin-top: 0px;
+    font-size: 64px;
+    font-weight: 900;
+    
 }
 .tagline {
     text-transform: None;
@@ -126,37 +130,6 @@ export default {
 }
 .issues-container {
     background-color: #F4F4F4
-}
-.col-flex {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
-    /* height: 70vh; */
-    margin-bottom: 32px;
-
-    
-}
-.row-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-grow: 2;
-}
-.title-flex-item {
-    flex-grow: .6;
-}
-.flex-item-row:hover {
-    cursor: pointer;
-}
-.issue-title {
-    margin-top: 8px;
-    margin-bottom: 0px;
-}
-.issue-info {
-    margin: 0px;
-    text-align: middle;
-    text-justify: inter-word;
 }
 button {
     background-color: #222222;
