@@ -59,13 +59,14 @@ export default {
     text-decoration: none;
     font-size: 20px;
     color: #222222;
-    border: 4px solid transparent;
+    padding: 8px;
+
 }
 .tab-button:hover {
+  background-color: #222222;
+  color: white;
   border-radius: 4px;
-  border: 4px solid;
-  border-color: #002868 #BF0A30 #BF0A30 #002868; 
-  
+  transition: background-color ease .2s;
     /* border-radius: 4px;
   border-style: solid;
   border-color: #002868 #BF0A30 #BF0A30 #002868; */

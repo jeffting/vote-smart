@@ -72,7 +72,6 @@ export default {
     margin-left: 10%;
     margin-right: 10%;
     /* height: 70vh; */
-    margin-bottom: 32px;
 }
 .row-flex {
     display: flex;

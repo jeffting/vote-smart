@@ -70,7 +70,9 @@ export default {
 </script>
 
 <style scoped>
-
+h1 {
+    margin-bottom: 0px;
+}
 .row {
   display: flex;
 }
@@ -89,6 +91,7 @@ export default {
 .image-candidate {
     float: left;
     margin-right: 16px;
+    border: 6px solid transparent;
     /* border: 6px solid #BF0A30; */
     
 }
