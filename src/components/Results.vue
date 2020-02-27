@@ -4,7 +4,7 @@
         <div v-for="(candidate, index) in this.cands" :key='index'>
             <div class="flex-container" :class="{tint: index %2 === 0}">
                 <div class=picture-container>
-                    <img class="winner-img-container" :class='{repImage: candidate.party === "Republican", demImage: candidate.party === "Democrat"}' :src="candidate.photo"/>
+                    <img v-on:click="goToPage(candidate.name)" class="winner-img-container" :class='{repImage: candidate.party === "Republican", demImage: candidate.party === "Democrat"}' :src="candidate.photo"/>
                     <h2>{{ candidate.name }}</h2>
                 </div>
                 <div class="info-flex-container">
@@ -84,6 +84,9 @@ export default {
         height: 240px;
         border-radius: 120px;
         object-fit: cover;
+    }
+    .winner-img-container:hover {
+        cursor: pointer;
     }
     .info-flex-container {
         display: flex;
