@@ -39,6 +39,9 @@ export default {
       issue: this.$route.params.issue,
     }
   },
+  beforeCreate() {
+        this.$store.dispatch('setPage', 'issues');
+  },
   methods: {
         routeToProfile(candidate) {
             this.$router.push({name: 'Profile', params: {name: candidate}})

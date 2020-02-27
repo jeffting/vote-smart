@@ -53,7 +53,6 @@
 <script>
 export default {
     beforeCreate() {
-        console.log(this.$route.name)
         if (this.$route.name === "Issues") {
             this.$store.dispatch('setPage', 'issues');
         }
@@ -73,7 +72,6 @@ export default {
     margin-left: 10%;
     margin-right: 10%;
     /* height: 70vh; */
-    margin-bottom: 32px;
 }
 .row-flex {
     display: flex;

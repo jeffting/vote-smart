@@ -5,6 +5,7 @@
         mode="out-in">
       <router-view/>
     </transition>
+    <div style="height: 64px;"></div>
   </div>
 </template>
 
