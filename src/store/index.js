@@ -858,7 +858,7 @@ export default new Vuex.Store({
                     text: "Critics argue that it’s the US’s moral responsibility to accept immigrants and refugees who come here for a better life, and that immigrants help boost the economy.",
                 },
                 {
-                    text: "ome Democratic candidates have called for reforming Immigration and Customs Enforcement (ICE) – the agency that oversees deportations – because they believe it has too much power. Their solutions range from reducing its responsibilities to completely getting rid of it.",
+                    text: "Some Democratic candidates have called for reforming Immigration and Customs Enforcement (ICE) – the agency that oversees deportations – because they believe it has too much power. Their solutions range from reducing its responsibilities to completely getting rid of it.",
                 },
                 {
                     text: "The Trump admin has also tried to overhaul legal immigration. It’s announced policies that favor merit-based immigration (think: giving priority to highly skilled immigrants or those who speak English) over family-based immigration.",
@@ -898,7 +898,7 @@ export default new Vuex.Store({
                 },
                 {
                     name: 'Donald Trump',
-                    text: 'He has pledged to extend the US-Mexico border wall, started and ended "zero tolerance policy", and wants to end DACA. He has also Suspended immigration from seven countries, including six majority-Muslim countries and capped number of refugees admitted to the US per year. He has proposed ending birthright citizenship, focus on merit-based immigration.'
+                    text: 'He has pledged to extend the US-Mexico border wall, started and ended "zero tolerance policy", and wants to end DACA. He has also suspended immigration from seven countries, including six majority-Muslim countries and capped number of refugees admitted to the US per year.'
                 },
                 {
                     name: 'Elizabeth Warren',
