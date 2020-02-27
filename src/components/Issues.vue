@@ -53,7 +53,6 @@
 <script>
 export default {
     beforeCreate() {
-        console.log(this.$route.name)
         if (this.$route.name === "Issues") {
             this.$store.dispatch('setPage', 'issues');
         }
